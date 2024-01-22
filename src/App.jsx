@@ -10,6 +10,7 @@ import LeftComponent from './Components/LeftComponent';
 import CardCarousel from './Components/CardCarousel';
 import Testimonials from './Components/Testimonials';
 import Contact from './Components/Contact';
+import './Components/fontawesome';
 
 function App() {
   return (
