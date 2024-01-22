@@ -18,8 +18,8 @@ const CardCarousel = () => {
     },
     {
       id: 2,
-      heading: 'Image 2',
-      description: 'Description for Image 2',
+      heading: 'Curtain',
+      description: 'Wave curtain withshear curtain',
       imageUrl: './src/assets/carousel2.png',
       starRating: 5,
       nowAvailable: true,
@@ -28,8 +28,8 @@ const CardCarousel = () => {
     },
     {
       id: 3,
-      heading: 'Image 3',
-      description: 'Description for Image 3',
+      heading: 'Curtain',
+      description: 'Wave curtain withshear curtain',
       imageUrl: './src/assets/carousel3.png',
       starRating: 5,
       nowAvailable: false,
@@ -38,7 +38,7 @@ const CardCarousel = () => {
     },
     {
       id: 4,
-      heading: 'Image 4',
+      heading: 'Curtain',
       description: 'Description for Image 4',
       imageUrl: './src/assets/carousel1.png',
       starRating: 5,
@@ -48,7 +48,7 @@ const CardCarousel = () => {
     },
     {
       id: 5,
-      heading: 'Image 5',
+      heading: 'Curtain',
       description: 'Description for Image 5',
       imageUrl: './src/assets/carousel2.png',
       starRating: 5,
