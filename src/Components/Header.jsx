@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import Button from "../layouts/Button";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { BiChevronDown } from "react-icons/bi";
@@ -51,14 +51,14 @@ const Navbar = () => {
                 <BiChevronDown className="cursor-pointer" size={25} />
               </div>
 
-              <ul className="absolute hidden space-y-2 group-hover:block bg-white border border-gray-300 rounded-lg p-5">
+              <ul className="absolute hidden space-y-2 group-hover:block bg-white-800  border border-gray-300 rounded-lg p-5">
                 <li>
                   <Link
                     to="services"
                     spy={true}
                     smooth={true}
                     duration={500}
-                    className="text-gray-800 hover:text-brightColor transition-all cursor-pointer"
+                    className="text-white hover:text-brightColor transition-all cursor-pointer"
                   >
                     Service1
                   </Link>
@@ -69,7 +69,7 @@ const Navbar = () => {
                     spy={true}
                     smooth={true}
                     duration={500}
-                    className="text-gray-800 hover:text-brightColor transition-all cursor-pointer"
+                    className="text-white hover:text-brightColor transition-all cursor-pointer"
                   >
                     Service1
                   </Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
                     spy={true}
                     smooth={true}
                     duration={500}
-                    className="text-gray-800 hover:text-brightColor transition-all cursor-pointer"
+                    className="text-white bg-hover:text-brightColor transition-all cursor-pointer"
                   >
                     Service1
                   </Link>
@@ -91,7 +91,7 @@ const Navbar = () => {
                     spy={true}
                     smooth={true}
                     duration={500}
-                    className="text-gray-800 hover:text-brightColor transition-all cursor-pointer"
+                    className="text-white hover:text-brightColor transition-all cursor-pointer"
                   >
                     Service1
                   </Link>
@@ -100,7 +100,7 @@ const Navbar = () => {
             </div>
 
             <Link
-              to="about"
+              to="/about"
               spy={true}
               smooth={true}
               duration={500}
@@ -168,7 +168,7 @@ const Navbar = () => {
             About
           </Link>
           <Link
-            to="portfolio"
+            to="/about"
             spy={true}
             smooth={true}
             duration={500}

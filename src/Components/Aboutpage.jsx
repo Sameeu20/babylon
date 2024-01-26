@@ -1,15 +1,20 @@
-import React from "react";
-import bg from '../assets/material-img.png'
-import { FaArrowRight } from "react-icons/fa6";
+import React from 'react'
+import bg from '../assets/about.png'
+import Header from './Header';
+import about from '../assets/aboutbg.png'
 
-const Material = () => {
+const Aboutpage = () => {
   return (
-   <div className="h-[100vh] w-full mx-auto grid grid-cols-2">
+    <div className='h-[100vh] w-full mx-auto'>
+     <div >
+      <Header/>
+      <img className = 'w-200 ' src={bg}/>
+      </div>
+      <div className="h-[100vh] w-full mx-auto grid grid-cols-2">
      <div className=" p-5 m-20 space-y-4 lg:pt-14">
-    <p className="px-8 text-[#f3c74e]" >EXPEREINCES</p>
   
         <h1 className=" px-8 font-bold text-4xl text-center md:text-start">
-          We Provide You The Best Experience
+          About
         </h1>
         <p className="px-8">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
@@ -18,15 +23,19 @@ const Material = () => {
           molestias omnis reprehenderit quae animi? Explicabo quasi accusamus
           laboriosam temporibus delectus, aut a? Quasi?
         </p>
-        <div className="flex justify-center lg:justify-start px-8 py-3">
-          <button className='   flex items-center px-3  border border-[#f3c74e]'> More Info <FaArrowRight size={35} className="px-3"/></button>
-        </div>
     </div>
     <div className="py-5">
-      <img className='mt-[30px]' src={bg}/>
+      <img className='mt-[30px]' src={about}/>
     </div>
-   </div>
-  );
-};
 
-export default Material;
+   </div>
+  < div className='h-[80vh] w-full flex justify-center'>
+      <h1 className='font-bold text-3xl'>
+        Why choosing US
+      </h1>
+    </div>
+      </div>
+  )
+}
+
+export default Aboutpage

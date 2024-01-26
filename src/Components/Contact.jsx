@@ -7,7 +7,7 @@ const Contact = () => {
         <div className="container border border-white rounded-[20px] drop-shadow">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
-              <div className="mb-12 max-w-[570px] lg:mb-0 border border-white p-5 bg-[#E0E0E0]">
+              <div className="mb-12 max-w-[570px] lg:mb-0 border border-white p-5 bg-[#f3c74e]">
                
                 <h2 className="mb-6 text-[28px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[30px] xl:text-[35px]">
                   GET IN TOUCH WITH US
