@@ -5,6 +5,7 @@ import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { BiChevronDown } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 
+
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
@@ -15,6 +16,7 @@ const Navbar = () => {
   const closeMenu = () => {
     setMenu(false);
   };
+  
 
   return (
     <div className=" fixed w-full">
@@ -27,11 +29,12 @@ const Navbar = () => {
 
           <nav className="hidden md:flex flex-row items-center px-[250px] text-lg font-medium gap-8">
             <Link
-              to="home"
+              to="/"
               spy={true}
               smooth={true}
               duration={500}
               className="hover:text-brightColor transition-all cursor-pointer"
+              
             >
               Home
             </Link>
@@ -39,7 +42,7 @@ const Navbar = () => {
             <div className="relative group">
               <div className=" flex items-center gap-1">
                 <Link
-                  to="services"
+                  to="/services"
                   spy={true}
                   smooth={true}
                   duration={500}
@@ -54,7 +57,7 @@ const Navbar = () => {
               <ul className="absolute hidden space-y-2 group-hover:block bg-white-800  border border-gray-300 rounded-lg p-5">
                 <li>
                   <Link
-                    to="services"
+                    to="/services"
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -65,7 +68,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    to="services"
+                    to="/services"
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -76,7 +79,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    to="services"
+                    to="/services"
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -87,7 +90,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    to="services"
+                    to="/services"
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -110,11 +113,12 @@ const Navbar = () => {
             </Link>
 
             <Link
-              to="portfolio"
+              to="/portfolio"
               spy={true}
               smooth={true}
               duration={500}
               className="hover:text-brightColor transition-all cursor-pointer"
+              
             >
              portfolio
             </Link>
@@ -138,7 +142,7 @@ const Navbar = () => {
           } lg:hidden flex flex-col absolute bg-black text-white left-0 top-20 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
         >
           <Link
-            to="home"
+            to="/"
             spy={true}
             smooth={true}
             duration={500}
@@ -148,7 +152,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            to="Services"
+            to="/services"
             spy={true}
             smooth={true}
             duration={500}
