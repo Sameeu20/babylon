@@ -3,6 +3,7 @@ import bg from '../assets/about.png';
 import Header from './Header';
 import about from '../assets/aboutbg.png';
 import Whychoose from './Whychoose';
+import Contact from './Contact';
 
 const Aboutpage = () => {
   const cardsData = [
@@ -49,6 +50,7 @@ const Aboutpage = () => {
           ))}
         </div>
       </div>
+      <Contact/>
     </div>
   );
 };
