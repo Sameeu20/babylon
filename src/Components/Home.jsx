@@ -9,12 +9,16 @@ import Material from './Material';
 import About from './About';
 import Collections from './Collections';
 import Testimonials from './Testimonials';
+import Headroom from 'react-headroom';
 
 
 function Home() {
   return (
     <div>
-        <Header/>
+      <Headroom>
+      <Header/>
+      </Headroom>
+        
         <Hero/>
         <Collections/>
         <div className=" flex justify-center items-center h-screen  ml-0 sm:ml-24 ">
