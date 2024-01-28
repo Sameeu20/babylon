@@ -19,7 +19,7 @@ const Aboutpage = () => {
     <div className='h-screen w-full mx-auto'>
       <div>
         <Header />
-        <img className='w-200' src={bg} alt='Background' />
+        <img className='w-200 object-cover object-center w-full h-[200px] object-clip' src={bg} alt='Background' />
       </div>
       <div className='h-screen w-full mx-auto grid grid-cols-2 gap-8'>
         <div className='p-5 m-20 space-y-4 lg:pt-14'>

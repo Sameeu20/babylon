@@ -59,7 +59,7 @@ const Navbar = () => {
             <div className="relative group">
               <div className=" flex items-center gap-1">
                 <Link
-                  to="/services"
+  
                   spy={true}
                   smooth={true}
                   duration={500}
@@ -76,7 +76,7 @@ const Navbar = () => {
               <ul className="absolute hidden space-y-2 group-hover:block bg-white border border-gray-300 rounded-lg text-black  p-3">
   <li className="border-b border-gray-300">
     <Link
-      to="/services"
+      to="/curtains&sofafabric"
       spy={true}
       smooth={true}
       duration={500}
