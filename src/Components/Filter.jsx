@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
+import ServiceData from './ServiceData';
+import ServiceComponent from './ServiceComponent';
+
 
 const Filter = () => {
   const [activeButton, setActiveButton] = useState(1);
+  const [selectedService, setSelectedService] = useState(null);
+
 
   const handleButtonClick = (buttonNumber) => {
     setActiveButton(buttonNumber);
-  };
+    const service = ServiceData.find((item) => item.id === buttonNumber.toString());
+    setSelectedService(service);
+  }
+  
 
   return (
     <div className='flex flex-col items-center w-full h-[50vh] mx-auto'>
@@ -91,6 +99,7 @@ const Filter = () => {
           </button>
         </div>
       </div>
+      {selectedService && <ServiceComponent details={[selectedService]} />}
     </div>
   );
 };

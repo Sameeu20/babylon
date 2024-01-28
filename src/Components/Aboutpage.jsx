@@ -27,11 +27,13 @@ const Aboutpage = () => {
             About
           </h1>
           <p className='px-8'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            architecto quisquam delectus minima perferendis nulla quia nisi
-            laborum, exercitationem cum quo accusantium, impedit sed. Dicta, quo
-            molestias omnis reprehenderit quae animi? Explicabo quasi accusamus
-            laboriosam temporibus delectus, aut a? Quasi?
+          Babylon Curtain Trading LLC has grown fast to become one of UAE’s premier curtain making firms. Babylon Curtain Trading LLC specializes in making curtains and sofa fabrics,sofa re upholstery,
+          Roman,Vertical,Venetian,wooden,bamboo blinds,bed spread,cusion,carpet and wallpaper fixing and supply.
+          Our team of designers has worked with a variety of clients all of whom were highly impressed by the bespoke designs and the 
+          professionalism of our staff. Our staff work as a team from start to finish,
+          ensuring that we meet your expectations in terms of design and timeliness.
+          Apart from making curtains and blinds, we also provide various soft furnishing services such as sofa,
+          headboard re-upholstery and bedspread supply.
           </p>
         </div>
         <div className='py-5'>

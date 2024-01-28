@@ -7,7 +7,8 @@ import { AiOutlineClose } from "react-icons/ai";
 import { useEffect } from "react";
 
 
-const Navbar = () => {
+const Navbar = (onServiceLinkClick ) => {
+  
   const [menu, setMenu] = useState(false);
   const [scrolling, setScrolling] = useState(false);
 
@@ -77,6 +78,7 @@ const Navbar = () => {
   <li className="border-b border-gray-300">
     <Link
       to="/curtains&sofafabric"
+      onClick={() => onServiceLinkClick(1)}
       spy={true}
       smooth={true}
       duration={500}
@@ -87,7 +89,8 @@ const Navbar = () => {
   </li>
   <li className="border-b border-gray-300">
     <Link
-      to="/services"
+      to='/curtainsindubai'
+      onClick={() => onServiceLinkClick(2)}
       spy={true}
       smooth={true}
       duration={500}
@@ -98,7 +101,7 @@ const Navbar = () => {
   </li>
   <li className="border-b border-gray-300">
     <Link
-      to="/services"
+      to="/SofaUpholstery"
       spy={true}
       smooth={true}
       duration={500}
@@ -167,17 +170,7 @@ const Navbar = () => {
     </Link>
   </li>
 
-  <li className="border-b border-gray-300">
-    <Link
-      to="/services"
-      spy={true}
-      smooth={true}
-      duration={500}
-      className=" hover:text-white hover:bg-gray-500 hover:w-full transition-all cursor-pointer p-1 rounded-[10px] whitespace-nowrap"
-    >
-      Bamboo Blinds
-    </Link>
-  </li>
+
 
   <li className="border-b border-gray-300">
     <Link
