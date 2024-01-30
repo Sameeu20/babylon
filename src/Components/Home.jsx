@@ -10,6 +10,7 @@ import About from './About';
 import Collections from './Collections';
 import Testimonials from './Testimonials';
 import Headroom from 'react-headroom';
+import Marquee from 'react-fast-marquee';
 
 
 function Home() {
@@ -28,7 +29,10 @@ function Home() {
     
     <About/>
     <Material/>
-    <Testimonials/>
+    <div className='flex flex-col items-center justify-center text-4xl font-medium pb-[50px] pt-[100px]'><h1>What our Client says</h1></div>
+    <Marquee speed={80}>
+      <Testimonials/>
+    </Marquee>
     <Contact/>
     <Footer/>
     </div>

@@ -37,6 +37,15 @@ const cardData = [
         image : pro3
         
     },
+    {
+        id: '4',
+        name : 'customer3',
+        job : 'job3',
+        content : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+        bg : bg3,
+        image : pro3
+        
+    }
  
 
 
