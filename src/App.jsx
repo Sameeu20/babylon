@@ -15,17 +15,9 @@ function App() {
       <Route path='/' element = {<Home/>}/>
       <Route path='/about' element = {<Aboutpage/>}/>
       <Route path='/portfolio' element = {<Portfolio/>}/>
-      <Route path='/curtains&sofafabric' element = {<ServicePage/>}/>
-      <Route path='/curtainsindubai' element = {<ServicePage/>}/>
-      <Route path='/SofaUpholstery' element = {<ServicePage/>}/>
-      <Route path='/curtains&sofafabric' element = {<ServicePage/>}/>
-      <Route path='/curtains&sofafabric' element = {<ServicePage/>}/>
-      <Route path='/curtains&sofafabric' element = {<ServicePage/>}/>
-      <Route path='/curtains&sofafabric' element = {<ServicePage/>}/>
-      <Route path='/curtains&sofafabric' element = {<ServicePage/>}/>
-      <Route path='/curtains&sofafabric' element = {<ServicePage/>}/>
-      <Route path='/curtains&sofafabric' element = {<ServicePage/>}/>
-      <Route path='/curtains&sofafabric' element = {<ServicePage/>}/>
+      <Route path='/services' element = {<ServicePage/>}/>
+     
+    
 
     </Routes>
    </BrowserRouter>

@@ -2,13 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../layouts/Button";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
-import { BiChevronDown } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { useEffect } from "react";
 
 
 const Navbar = (onServiceLinkClick ) => {
-  
   const [menu, setMenu] = useState(false);
   const [scrolling, setScrolling] = useState(false);
 
@@ -60,7 +58,7 @@ const Navbar = (onServiceLinkClick ) => {
             <div className="relative group">
               <div className=" flex items-center gap-1">
                 <Link
-  
+                  to="/services"
                   spy={true}
                   smooth={true}
                   duration={500}
@@ -69,145 +67,8 @@ const Navbar = (onServiceLinkClick ) => {
                  Services
                 </Link>
 
-                <BiChevronDown className="cursor-pointer" size={25} />
+                
               </div>
-
-           
-
-              <ul className="absolute hidden space-y-2 group-hover:block bg-white border border-gray-300 rounded-lg text-black  p-3">
-  <li className="border-b border-gray-300">
-    <Link
-      to="/curtains&sofafabric"
-      onClick={() => onServiceLinkClick(1)}
-      spy={true}
-      smooth={true}
-      duration={500}
-      className="hover:text-white hover:bg-gray-500 transition-all cursor-pointer p-1 rounded-[10px] whitespace-nowrap"
-    >
-      Curtain And Sofa Fabric
-    </Link>
-  </li>
-  <li className="border-b border-gray-300">
-    <Link
-      to='/curtainsindubai'
-      onClick={() => onServiceLinkClick(2)}
-      spy={true}
-      smooth={true}
-      duration={500}
-      className="hover:text-white hover:bg-gray-500 transition-all cursor-pointer p-1 rounded-[10px] whitespace-nowrap"
-    >
-      Curtains In Dubai
-    </Link>
-  </li>
-  <li className="border-b border-gray-300">
-    <Link
-      to="/SofaUpholstery"
-      spy={true}
-      smooth={true}
-      duration={500}
-      className="hover:text-white hover:bg-gray-500 transition-all cursor-pointer p-1 rounded-[10px] whitespace-nowrap"
-    >
-      Sofa Upholstery
-    </Link>
-  </li>
-  <li className="border-b border-gray-300">
-    <Link
-      to="/services"
-      spy={true}
-      smooth={true}
-      duration={500}
-      className=" hover:text-white hover:bg-gray-500 hover:w-full transition-all cursor-pointer p-1 rounded-[10px] whitespace-nowrap"
-    >
-      Roman Blinds
-    </Link>
-  </li>
-
-  <li className="border-b border-gray-300">
-    <Link
-      to="/services"
-      spy={true}
-      smooth={true}
-      duration={500}
-      className=" hover:text-white hover:bg-gray-500 hover:w-full transition-all cursor-pointer p-1 rounded-[10px] whitespace-nowrap"
-    >
-      Vertical Blinds
-    </Link>
-  </li>
-
-  <li className="border-b border-gray-300">
-    <Link
-      to="/services"
-      spy={true}
-      smooth={true}
-      duration={500}
-      className=" hover:text-white hover:bg-gray-500 hover:w-full transition-all cursor-pointer p-1 rounded-[10px] whitespace-nowrap"
-    >
-      Venetian Blinds
-    </Link>
-  </li>
-
-  <li className="border-b border-gray-300">
-    <Link
-      to="/services"
-      spy={true}
-      smooth={true}
-      duration={500}
-      className=" hover:text-white hover:bg-gray-500 hover:w-full transition-all cursor-pointer p-1 rounded-[10px] whitespace-nowrap"
-    >
-      Wooden Blinds
-    </Link>
-  </li>
-
-  <li className="border-b border-gray-300">
-    <Link
-      to="/services"
-      spy={true}
-      smooth={true}
-      duration={500}
-      className=" hover:text-white hover:bg-gray-500 hover:w-full transition-all cursor-pointer p-1 rounded-[10px] whitespace-nowrap"
-    >
-      Bamboo Blinds
-    </Link>
-  </li>
-
-
-
-  <li className="border-b border-gray-300">
-    <Link
-      to="/services"
-      spy={true}
-      smooth={true}
-      duration={500}
-      className=" hover:text-white hover:bg-gray-500 hover:w-full transition-all cursor-pointer p-1 rounded-[10px] whitespace-nowrap"
-    >
-      Bed Spread,Cusions
-    </Link>
-  </li>
-
-  <li className="border-b border-gray-300">
-    <Link
-      to="/services"
-      spy={true}
-      smooth={true}
-      duration={500}
-      className=" hover:text-white hover:bg-gray-500 hover:w-full transition-all cursor-pointer p-1 rounded-[10px] whitespace-nowrap"
-    >
-     Out door
-    </Link>
-  </li>
-
-  <li className="border-b border-gray-300">
-    <Link
-      to="/services"
-      spy={true}
-      smooth={true}
-      duration={500}
-      className=" hover:text-white hover:bg-gray-500 hover:w-full transition-all cursor-pointer p-1 rounded-[10px] whitespace-nowrap"
-    >
-      Carpet,Wallpaper Supply & Fixing
-    </Link>
-  </li>
-</ul>
 
 
             </div>
