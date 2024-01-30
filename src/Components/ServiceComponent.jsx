@@ -1,23 +1,20 @@
-// ServiceComponent.js
 import React from 'react';
 
-const ServiceComponent = (props) => {
-  const { details } = props;
-
+const ServiceComponent = ({ details }) => {
   return (
-    details.map((value, index) => (
-      <div className='h-[60vh] w-full mx-auto' key={index}>
-        <div className='grid grid-cols-2'>
-          <div className='mt-[10px]'>
-            <img className='w-[600px]' src={value.img} alt={value.title} />
+    <div className='h-[60vh] w-full mx-auto'>
+      {details.map((value, index) => (
+        <div key={index} className='grid grid-cols-1 lg:grid-cols-2 gap-8 items-center'>
+          <div className='lg:mt-0'>
+            <img className='w-full h-auto' src={value.img} alt={value.title} />
           </div>
-          <div className='mt-[50px]'>
+          <div className='lg:mt-0 mt-5'>
             <h1 className='font-medium text-4xl pt-7 pb-5'>{value.title}</h1>
-            <h1 className='flex flex-col pr-[50px] justify-normal'>{value.desc}</h1>
+            <p className='pr-4'>{value.desc}</p>
           </div>
         </div>
-      </div>
-    ))
+      ))}
+    </div>
   );
 };
 

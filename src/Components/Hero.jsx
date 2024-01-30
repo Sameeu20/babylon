@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { BsSearch } from "react-icons/bs";
 
+
 const Home = () => {
+
   return (
     <div className=" min-h-screen flex flex-row justify-center items-center lg:px-32 px-5 bg-[url('./assets/hero.jpg')] ">
       <div className=" ml-[100px] p-[100px] w-full ">

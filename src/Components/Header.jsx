@@ -5,8 +5,7 @@ import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import { useEffect } from "react";
 
-
-const Navbar = (onServiceLinkClick ) => {
+const Navbar = ({ onServiceLinkClick }) => {
   const [menu, setMenu] = useState(false);
   const [scrolling, setScrolling] = useState(false);
 
@@ -21,7 +20,7 @@ const Navbar = (onServiceLinkClick ) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      setScrolling(scrollTop > 50); // You can adjust the scroll threshold as needed
+      setScrolling(scrollTop > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -32,85 +31,50 @@ const Navbar = (onServiceLinkClick ) => {
   }, []);
 
   return (
-    
-    <div className={`fixed w-full transition-transform duration-300 ${
-      scrolling ? "-translate-y-full" : "translate-y-0"
-    }`}>
+    <div className={`fixed w-full transition-transform duration-300 ${scrolling ? "-translate-y-full" : "translate-y-0"}`}>
       <div>
-        <div className=" flex flex-row justify-between p-5 md:px-32 px-5 text-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
-          <div className=" flex flex-row items-center cursor-pointer">
-  
-            <h1 className=" text-2xl font-bold">Babylon</h1>
+        <div className="flex flex-row justify-between p-5 md:px-32 px-5 text-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+          <div className="flex flex-row items-center cursor-pointer">
+            <h1 className="text-2xl font-bold">Babylon</h1>
           </div>
 
           <nav className="hidden md:flex flex-row items-center px-[250px] text-lg font-medium gap-8">
-            <Link
-              to="/"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="hover:text-brightColor transition-all cursor-pointer"
-              
-            >
+            <Link to="/" spy={true} smooth={true} duration={500} className="hover:text-brightColor transition-all cursor-pointer">
               Home
             </Link>
 
             <div className="relative group">
-              <div className=" flex items-center gap-1">
+              <div className="flex items-center gap-1">
                 <Link
                   to="/services"
                   spy={true}
                   smooth={true}
                   duration={500}
                   className="hover:text-brightColor transition-all cursor-pointer"
+                  onClick={() => onServiceLinkClick("1")} // Pass the service ID here
                 >
-                 Services
+                  Services
                 </Link>
-
-                
               </div>
-
-
             </div>
 
-            <Link
-              to="/about"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="hover:text-brightColor transition-all cursor-pointer"
-            >
+            <Link to="/about" spy={true} smooth={true} duration={500} className="hover:text-brightColor transition-all cursor-pointer">
               About
             </Link>
 
-            <Link
-              to="/portfolio"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="hover:text-brightColor transition-all cursor-pointer"
-              
-            >
-             portfolio
+            <Link to="/portfolio" spy={true} smooth={true} duration={500} className="hover:text-brightColor transition-all cursor-pointer">
+              Portfolio
             </Link>
 
-           
-            
             <Button title="Contact" />
           </nav>
 
           <div className="md:hidden flex items-center">
-            {menu ? (
-              <AiOutlineClose size={25} onClick={handleChange} />
-            ) : (
-              <AiOutlineMenuUnfold size={25} onClick={handleChange} />
-            )}
+            {menu ? <AiOutlineClose size={25} onClick={handleChange} /> : <AiOutlineMenuUnfold size={25} onClick={handleChange} />}
           </div>
         </div>
         <div
-          className={` ${
-            menu ? "translate-x-0" : "-translate-x-full"
-          } lg:hidden flex flex-col absolute bg-black text-white left-0 top-20 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
+          className={` ${menu ? "translate-x-0" : "-translate-x-full"} lg:hidden flex flex-col absolute bg-black text-white left-0 top-20 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
         >
           <Link
             to="/"
@@ -128,9 +92,9 @@ const Navbar = (onServiceLinkClick ) => {
             smooth={true}
             duration={500}
             className="hover:text-brightColor transition-all cursor-pointer"
-            onClick={closeMenu}
+            onClick={() => onServiceLinkClick("1")} // Pass the service ID here
           >
-           Services
+            Services
           </Link>
           <Link
             to="about"
@@ -152,7 +116,6 @@ const Navbar = (onServiceLinkClick ) => {
           >
             Portfolio
           </Link>
-      
 
           <Button title="Contact" />
         </div>

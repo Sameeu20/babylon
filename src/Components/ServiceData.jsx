@@ -71,6 +71,20 @@ const ServiceData = [
       secondtitle :" Curtain & Sofa Fabric in Dubai,Sharjah,Abudhabi,U.A.E ",
       desc: "Babylon Curtain Trading LLC offers an extensive range of CURTAINS & SOFA FABRIC in Dubai, Sharjah, Abudhabi, U.A.E. and the surrounding region and give you more choice, more value and all the services you need under one roof. We can get to you quickly to arrange a quote and there is absolutely no obligation to use our services. We believe in a relaxing consultation visit that is completely free of charge and utterly inspiring",
     },
+    {
+      id: "10",
+      title: "MASJID CARPETS",
+      img : s7,
+      secondtitle :" Curtain & Sofa Fabric in Dubai,Sharjah,Abudhabi,U.A.E ",
+      desc: "Babylon Curtain Trading LLC offers an extensive range of CURTAINS & SOFA FABRIC in Dubai, Sharjah, Abudhabi, U.A.E. and the surrounding region and give you more choice, more value and all the services you need under one roof. We can get to you quickly to arrange a quote and there is absolutely no obligation to use our services. We believe in a relaxing consultation visit that is completely free of charge and utterly inspiring",
+    },
+    {
+      id: "11",
+      title: "OFFICE CARPETS",
+      img : s7,
+      secondtitle :" Curtain & Sofa Fabric in Dubai,Sharjah,Abudhabi,U.A.E ",
+      desc: "Babylon Curtain Trading LLC offers an extensive range of CURTAINS & SOFA FABRIC in Dubai, Sharjah, Abudhabi, U.A.E. and the surrounding region and give you more choice, more value and all the services you need under one roof. We can get to you quickly to arrange a quote and there is absolutely no obligation to use our services. We believe in a relaxing consultation visit that is completely free of charge and utterly inspiring",
+    },
   ];
   
   export default ServiceData;
