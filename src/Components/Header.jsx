@@ -5,7 +5,7 @@ import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import { useEffect } from "react";
 
-const Navbar = ({ onServiceLinkClick }) => {
+const Navbar = ({ onServiceLinkClick,}) => {
   const [menu, setMenu] = useState(false);
   const [scrolling, setScrolling] = useState(false);
 
@@ -38,8 +38,8 @@ const Navbar = ({ onServiceLinkClick }) => {
             <h1 className="text-2xl font-bold">Babylon</h1>
           </div>
 
-          <nav className="hidden md:flex flex-row items-center px-[250px] text-lg font-medium gap-8">
-            <Link to="/" spy={true} smooth={true} duration={500} className="hover:text-brightColor transition-all cursor-pointer">
+          <nav className="hidden md:flex flex-row items-center px-[250px] text-lg font-medium gap-8 ">
+            <Link to="/" spy={true} smooth={true} duration={500} className="hover:text-[#E58411]  transition-all cursor-pointer">
               Home
             </Link>
 
@@ -50,7 +50,7 @@ const Navbar = ({ onServiceLinkClick }) => {
                   spy={true}
                   smooth={true}
                   duration={500}
-                  className="hover:text-brightColor transition-all cursor-pointer"
+                  className="hover:text-[#E58411] transition-all cursor-pointer"
                   onClick={() => onServiceLinkClick("1")} // Pass the service ID here
                 >
                   Services
@@ -58,15 +58,15 @@ const Navbar = ({ onServiceLinkClick }) => {
               </div>
             </div>
 
-            <Link to="/about" spy={true} smooth={true} duration={500} className="hover:text-brightColor transition-all cursor-pointer">
+            <Link to="/about" spy={true} smooth={true} duration={500} className="hover:text-[#E58411] transition-all cursor-pointer">
               About
             </Link>
 
-            <Link to="/portfolio" spy={true} smooth={true} duration={500} className="hover:text-brightColor transition-all cursor-pointer">
+            <Link to="/portfolio" spy={true} smooth={true} duration={500} className="hover:text-[#E58411] transition-all cursor-pointer">
               Portfolio
             </Link>
 
-            <Button title="Contact" />
+            <Button title="Contact"  />
           </nav>
 
           <div className="md:hidden flex items-center">
@@ -81,7 +81,7 @@ const Navbar = ({ onServiceLinkClick }) => {
             spy={true}
             smooth={true}
             duration={500}
-            className="hover:text-brightColor transition-all cursor-pointer"
+            className="hover:text-[#E58411] transition-all cursor-pointer"
             onClick={closeMenu}
           >
             Home
@@ -91,7 +91,7 @@ const Navbar = ({ onServiceLinkClick }) => {
             spy={true}
             smooth={true}
             duration={500}
-            className="hover:text-brightColor transition-all cursor-pointer"
+            className="hover:text-[#E58411] transition-all cursor-pointer"
             onClick={() => onServiceLinkClick("1")} // Pass the service ID here
           >
             Services
@@ -101,7 +101,7 @@ const Navbar = ({ onServiceLinkClick }) => {
             spy={true}
             smooth={true}
             duration={500}
-            className="hover:text-brightColor transition-all cursor-pointer"
+            className="hover:text-[#E58411] transition-all cursor-pointer"
             onClick={closeMenu}
           >
             About
@@ -111,13 +111,13 @@ const Navbar = ({ onServiceLinkClick }) => {
             spy={true}
             smooth={true}
             duration={500}
-            className="hover:text-brightColor transition-all cursor-pointer"
+            className="hover:text-[#E58411] transition-all cursor-pointer"
             onClick={closeMenu}
           >
             Portfolio
           </Link>
 
-          <Button title="Contact" />
+          <Button className='hover:bg-[#E58411]' title="Contact" />
         </div>
       </div>
     </div>

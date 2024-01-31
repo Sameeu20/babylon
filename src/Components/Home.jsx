@@ -14,6 +14,7 @@ import Marquee from 'react-fast-marquee';
 
 
 function Home() {
+
   return (
     <div>
       <Headroom>
@@ -21,11 +22,15 @@ function Home() {
       </Headroom>
         
         <Hero/>
+        
         <Collections/>
-        <div className=" flex justify-center items-center h-screen  ml-0 sm:ml-24 ">
+       
+        <div className=" flex justify-center items-center h-screen  ml-0 sm:ml-24   ">
       <LeftComponent />
       <CardCarousel />
     </div>
+      
+        
     
     <About/>
     <Material/>

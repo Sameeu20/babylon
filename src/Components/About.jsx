@@ -1,14 +1,26 @@
 import React from "react";
 import img from "../assets/About.jpg";
 import { FaArrowRight } from "react-icons/fa6";
-
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
+import { useRef,useEffect } from "react";
 
 const About = () => {
- 
+  const Cref=useRef(null)
+
+  useEffect(()=>{
+  const el=Cref.current;
+  gsap.fromTo(el,{x:100},{x:0,duration:10,scrollTrigger:{
+    trigger:el,
+    scrub:1
+  }})
+  },[])
+
 
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row justify-center items-center ">
-      <img className='ml-0' src={img} alt="img" width="600px" height="500px" />
+    <div className="min-h-screen flex flex-col lg:flex-row justify-center items-center " ref={Cref}>
+      <img className='ml-0 hover:scale-105 duration-300' src={img} alt="img" width="600px" height="500px" />
       
       <div className=" p-5 m-20 space-y-4 lg:pt-14">
       <p className="px-8 text-[#f3c74e]" >EXPEREINCES</p>
@@ -23,9 +35,7 @@ const About = () => {
           laboriosam temporibus delectus, aut a? Quasi?
         </p>
 
-        <div className=" flex justify-center lg:justify-start px-8 py-3">
-          <button className=' hover:bg-[#f3c74e] hover:text-black flex items-center px-3  border border-[#f3c74e]'> More Info <FaArrowRight size={35} className="px-3"/></button>
-        </div>
+    
       </div>
     </div>
   );

@@ -1,11 +1,25 @@
 import React from "react";
 import bg from '../assets/material-img.png'
 import { FaArrowRight } from "react-icons/fa6";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
+import { useRef,useEffect } from "react";
 
 const Material = () => {
+  const Cref=useRef(null)
+
+  useEffect(()=>{
+  const el=Cref.current;
+  gsap.fromTo(el,{x:-100},{x:0,duration:10,scrollTrigger:{
+    trigger:el,
+    scrub:1
+  }})
+  },[])
+
   return (
-   <div className="h-[100vh] w-full mx-auto grid grid-cols-2">
-     <div className=" p-5 m-20 space-y-4 lg:pt-14">
+   <div className="h-[100vh] w-full mx-auto grid grid-cols-2" ref={Cref}>
+     <div className=" p-5 m-20 space-y-4 lg:pt-14" >
     <p className="px-8 text-[#f3c74e]" >EXPEREINCES</p>
   
         <h1 className=" px-8 font-bold text-4xl text-center md:text-start">
@@ -18,11 +32,8 @@ const Material = () => {
           molestias omnis reprehenderit quae animi? Explicabo quasi accusamus
           laboriosam temporibus delectus, aut a? Quasi?
         </p>
-        <div className="flex justify-center lg:justify-start px-8 py-3">
-          <button className='   flex items-center px-3  border border-[#f3c74e]'> More Info <FaArrowRight size={35} className="px-3"/></button>
-        </div>
     </div>
-    <div className="py-5">
+    <div className="py-5" >
       <img className='mt-[30px]' src={bg}/>
     </div>
    </div>
