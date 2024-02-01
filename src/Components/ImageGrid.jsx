@@ -17,16 +17,19 @@ const ImageGrid = ({ images }) => {
   };
 
   return (
-    <div className="grid grid-cols-4 gap-4">
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-4 " >
       {images.map((image, index) => (
-        <div key={index} className="p-4 border">
+        <div key={index} className="grid gap-4 ">
+          <div>
+            
+          </div>
           <img
             src={image.src}
             alt={image.title}
-            className="w-full h-auto object-cover cursor-pointer transform transition-transform hover:scale-110"
+            className="w-full h-auto object-cover cursor-pointer transform transition-transform hover:scale-110 rounded-lg"
             onClick={() => openModal(image)}
           />
-          <p className="mt-2 text-center">{image.title}</p>
+          <p className=" text-center " >{image.title}</p>
         </div>
       ))}
 

@@ -3,17 +3,45 @@ import Header from './Header';
 import bg from '../assets/portfolioimg.png';
 import ImageGrid from './ImageGrid';
 
-const categories = ['Nature', 'Animals', 'City', 'Food'];
+const categories = ['Curtains', 'Animals', 'City', 'Food'];
 
 const Portfolio = () => {
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   const images = {
-    Nature: [
-      { src: 'https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-james-wheeler-417074.jpg&fm=jpg', title: 'Nature 1' },
-      { src: 'https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-james-wheeler-417074.jpg&fm=jpg', title: 'Nature 2' },
-      { src: 'https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-james-wheeler-417074.jpg&fm=jpg', title: 'Nature 3' },
-      { src: 'https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-james-wheeler-417074.jpg&fm=jpg', title: 'Nature 4' },
+    Curtains: [
+      { src: './src/assets/curtains/curtain_1.jpg', title: 'Curtain 1' },
+      { src: './src/assets/curtains/curtain_2.jpeg', title: 'Curtain 2' },
+      { src: './src/assets/curtains/curtain_3.jpeg', title: 'Curtain 3' },
+      { src: './src/assets/curtains/curtain_4.jpeg', title: 'Curtain 4' },
+      { src: './src/assets/curtains/curtains_5.jpeg', title: 'Curtain 5' },
+      { src: './src/assets/curtains/curtains_6.jpeg', title: 'Curtain 6' },
+      { src: './src/assets/curtains/curtains_7.jpeg', title: 'Curtain 7' },
+      { src: './src/assets/curtains/curtains_8.jpeg', title: 'Curtain 8' },
+      { src: './src/assets/curtains/curtains_9.jpeg', title: 'Curtain 9' },
+      { src: './src/assets/curtains/curtains_10.jpeg', title: 'Curtain 10' },
+      { src: './src/assets/curtains/blinds_curtains_dubai.jpeg', title: 'Blinds Curtain Dubai' },
+      { src: './src/assets/curtains/blinds_curtains_dubai2.jpeg', title: 'Blinds Curtain Dubai 2' },
+      { src: './src/assets/curtains/curtains_11.jpeg', title: 'Curtains 11' },
+      { src: './src/assets/curtains/curtains_dubai3.jpeg', title: 'Curtain Dubai 3' },
+      { src: './src/assets/curtains/curtains_dubai4.jpeg', title: 'Curtain Dubai 4' },
+      { src: './src/assets/curtains/curtains_dubai5.jpeg', title: 'Curtain Dubai 5' },
+      { src: './src/assets/curtains/curtains_dubai6.jpeg', title: 'Curtain Dubai 6' },
+      { src: './src/assets/curtains/curtains_dubai7.jpeg', title: 'Curtain Dubai 7' },
+      { src: './src/assets/curtains/curtains_dubai8.jpeg', title: 'Curtain Dubai 8' },
+      { src: './src/assets/curtains/curtains_dubai9.jpeg', title: 'Curtain Dubai 9' },
+      { src: './src/assets/curtains/curtains_dubai10.jpeg', title: 'Curtain Dubai 10' },
+      { src: './src/assets/curtains/curtains_dubai11.jpeg', title: 'Curtain Dubai 11' },
+      { src: './src/assets/curtains/curtains_dubai12.jpeg', title: 'Curtain Dubai 12' },
+      { src: './src/assets/curtains/curtains_dubai13.jpeg', title: 'Curtain Dubai 13' },
+      { src: './src/assets/curtains/curtains_dubai14.jpeg', title: 'Curtain Dubai 14' },
+      { src: './src/assets/curtains/curtains_dubai15.jpeg', title: 'Curtain Dubai 15' },
+      { src: './src/assets/curtains/sheercurtains_dubai.jpeg', title: 'Sheer Curtains Dubai 1' },
+      { src: './src/assets/curtains/curtains_dubai16.jpeg', title: 'Curtains Dubai 16' },
+      { src: './src/assets/curtains/curtains_dubai17.jpeg', title: 'Curtains Dubai 17' },
+      { src: './src/assets/curtains/wavecurtain.jpeg', title: 'Wave Curtain' },
+      { src: './src/assets/curtains/wavecurtain_sheercurtain.jpeg', title: 'Wave Curtain,SheerCurtain' },
+      { src: './src/assets/curtains/wave_sheercurtain2.jpeg', title: 'Wave Curtain,SheerCurtain 2' },
       // Add more images for the Nature category
     ],
     Animals: [
