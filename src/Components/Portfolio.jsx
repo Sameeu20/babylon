@@ -3,7 +3,7 @@ import Header from './Header';
 import bg from '../assets/portfolioimg.png';
 import ImageGrid from './ImageGrid';
 
-const categories = ['Curtains', 'Animals', 'City', 'Food'];
+const categories = ['Curtains', 'Sofa_fabrics', 'City', 'Food'];
 
 const Portfolio = () => {
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -44,9 +44,10 @@ const Portfolio = () => {
       { src: './src/assets/curtains/wave_sheercurtain2.jpeg', title: 'Wave Curtain,SheerCurtain 2' },
       // Add more images for the Nature category
     ],
-    Animals: [
-      { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC-6xb-6GVydfB0Fa4HjisAh2TVu1QJXUcTA&usqp=CAU', title: 'Animal 1' },
-      { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC-6xb-6GVydfB0Fa4HjisAh2TVu1QJXUcTA&usqp=CAU', title: 'Animal 2' },
+    Sofa_fabrics: [
+      { src: './src/assets/sofa_fabrics/Curtains_sofa-upholstery.jpeg', title: 'Curtains,Sofa Upholstery' },
+      { src: './src/assets/sofa_fabrics/sofa-re-upholstry-1.jpeg', title: 'Sofa Re  Upholstery 1' },
+      // { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC-6xb-6GVydfB0Fa4HjisAh2TVu1QJXUcTA&usqp=CAU', title: 'Animal 2' },
       // Add more images for the Animals category
     ],
     City: [
