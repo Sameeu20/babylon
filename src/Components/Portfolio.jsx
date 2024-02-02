@@ -3,7 +3,7 @@ import Header from './Header';
 import bg from '../assets/portfolioimg.png';
 import ImageGrid from './ImageGrid';
 
-const categories = ['Curtains', 'Sofa_fabrics', 'City', 'Food'];
+const categories = ['Curtains', 'Sofa_fabrics', 'Sofa_re_upholstery', 'Food'];
 
 const Portfolio = () => {
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -50,9 +50,25 @@ const Portfolio = () => {
       // { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC-6xb-6GVydfB0Fa4HjisAh2TVu1QJXUcTA&usqp=CAU', title: 'Animal 2' },
       // Add more images for the Animals category
     ],
-    City: [
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/0/01/New_York_City_%28New_York%2C_USA%29%2C_Empire_State_Building_--_2012_--_6448.jpg', title: 'City 1' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/0/01/New_York_City_%28New_York%2C_USA%29%2C_Empire_State_Building_--_2012_--_6448.jpg', title: 'City 2' },
+    Sofa_re_upholstery: [
+      { src: './src/assets/sofa_re_upholstery/curtains_sofa_upholstery_1.jpeg', title: 'Curtain Sofa Upholstery 1' },
+      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_1.jpeg', title: 'Sofa Upholstery 1' },
+      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_2.jpeg', title: 'Sofa Upholstery 2' },
+      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_3.jpeg', title: 'Sofa Upholstery 3' },
+      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_4.jpeg', title: 'Sofa Upholstery 4' },
+      { src: './src/assets/sofa_re_upholstery/sofa_upholstery5.jpeg', title: 'Sofa Upholstery 5' },
+      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_6.jpeg', title: 'Sofa Upholstery 6' },
+      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_7.jpeg', title: 'Sofa Upholstery 7' },
+      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_8.jpeg', title: 'Sofa Upholstery 8' },
+      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_9.jpeg', title: 'Sofa Upholstery 9' },
+      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_10.jpeg', title: 'Sofa Upholstery 10' },
+      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_11.jpeg', title: 'Sofa Upholstery 11' },
+      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_12.jpeg', title: 'Sofa Upholstery 12' },
+      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_dubai_1.jpeg', title: 'Sofa Upholstery Dubai 1' },
+      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_dubai_2.jpeg', title: 'Sofa Upholstery Dubai 2' },
+      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_dubai_3.jpeg', title: 'Sofa Upholstery Dubai 3' },
+      { src: './src/assets/sofa_re_upholstery/arabic_majlis_upholstery_1.jpeg', title: 'Arabic Majlis Sofa Reupholstery 1' },
+      { src: './src/assets/sofa_re_upholstery/arabic_majlis_sofa_upholstery_dubai_2.jpeg', title: 'Arabic Majlis Sofa Reupholstery Dubai 2' },
       // Add more images for the City category
     ],
     Food: [
