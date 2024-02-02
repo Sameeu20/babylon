@@ -6,7 +6,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 const Card = ({ heading, description, imageUrl, starRating, nowAvailable, price, oldPrice }) => {
   return (
     <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/2 xl:w-1/4 p-4">
-      <img src={imageUrl} alt={heading} className="w-full h-auto sm:w-64 sm:h-auto md:w-80 md:h-auto lg:w-96 lg:h-auto xl:w-96 xl:h-auto"/>
+      <img src={imageUrl} alt={heading} className="w-full h-auto sm:w-64 sm:h-auto md:w- md:h-auto lg:w-96 lg:h-auto xl:w-96 xl:h-auto"/>
       <h2 className="text-gray-500 font-inter text-base md:text-sm lg:text-base xl:text-base">{heading}</h2>
       <p className="text-blue-900 font-inter font-semibold text-lg md:text-base lg:text-lg xl:text-lg capitalize">{description}</p>
       <div className="flex items-center mb-2">

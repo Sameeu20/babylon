@@ -65,18 +65,16 @@ const CardCarousel = () => {
   // Number of visible cards in a row
   const visibleCardsCount = 3;
 
+  const totalCards = cards.length;
+
   // Event handler for clicking the next button
   const handleNextClick = () => {
-    if (startIdx + visibleCardsCount < cards.length) {
-      setStartIdx(startIdx + 1);
-    }
+    setStartIdx((startIdx + 1) % totalCards);
   };
 
   // Event handler for clicking the previous button
   const handlePrevClick = () => {
-    if (startIdx > 0) {
-      setStartIdx(startIdx - 1);
-    }
+    setStartIdx((startIdx - 1 + totalCards) % totalCards);
   };
 
   return (
@@ -89,7 +87,7 @@ const CardCarousel = () => {
           &gt;
         </button>
       </div>
-      <div className="flex flex-wrap  -mx-4 gap-20">
+      <div className="flex flex-wrap  -mx-4 gap-20 w-full">
         {cards.slice(startIdx, startIdx + visibleCardsCount).map((card) => (
           <Card key={card.id}  {...card} />
         ))}
