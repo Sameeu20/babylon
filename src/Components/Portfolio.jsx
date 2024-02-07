@@ -3,7 +3,7 @@ import Header from './Header';
 import bg from '../assets/portfolioimg.png';
 import ImageGrid from './ImageGrid';
 
-const categories = ['Curtains', 'Sofa_fabrics', 'Sofa_re_upholstery', 'Food'];
+const categories = ['Curtains', 'Sofa_fabrics', 'Sofa_re_upholstery', 'Blinds'];
 
 const Portfolio = () => {
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -71,9 +71,27 @@ const Portfolio = () => {
       { src: './src/assets/sofa_re_upholstery/arabic_majlis_sofa_upholstery_dubai_2.jpeg', title: 'Arabic Majlis Sofa Reupholstery Dubai 2' },
       // Add more images for the City category
     ],
-    Food: [
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/800px-Good_Food_Display_-_NCI_Visuals_Online.jpg', title: 'Food 1' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/800px-Good_Food_Display_-_NCI_Visuals_Online.jpg', title: 'Food 2' },
+    Blinds: [
+      { src: './src/assets/blinds/blinds-1.jpeg', title: 'Blind 1' },
+      { src: './src/assets/blinds/blinds-2.jpeg', title: 'Blind 2' },
+      { src: './src/assets/blinds/blinds-3.jpeg', title: 'Blind 3' },
+      { src: './src/assets/blinds/blinds-4.jpeg', title: 'Blind 4' },
+      { src: './src/assets/blinds/blinds-dubai-1.jpeg', title: 'Blind Dubai 1' },
+      { src: './src/assets/blinds/blinds-dubai-2.jpeg', title: 'Blind Dubai 2' },
+      { src: './src/assets/blinds/duplex-blinds-dubai-2.jpeg', title: 'Duplex Blind Dubai 2' },
+      { src: './src/assets/blinds/hospital-blinds-1.jpeg', title: 'Hospital Blind 1' },
+      { src: './src/assets/blinds/hospital-blinds-2.jpeg', title: 'Hospital Blind 2' },
+      { src: './src/assets/blinds/hospital-blinds-3.jpeg', title: 'Hospital Blind 3' },
+      { src: './src/assets/blinds/hospital-blinds-4.jpeg', title: 'Hospital Blind 4' },
+      { src: './src/assets/blinds/roman-blinds-dubai-1.jpeg', title: 'Roman Blind Dubai 1' },
+      { src: './src/assets/blinds/roman-blinds-dubai-2.jpeg', title: 'Roman Blind Dubai 2' },
+      { src: './src/assets/blinds/roman-blinds-dubai-3.jpeg', title: 'Roman Blind Dubai 3' },
+      { src: './src/assets/blinds/roman-blinds-dubai-4.jpeg', title: 'Roman Blind Dubai 4' },
+      { src: './src/assets/blinds/roman-blinds-dubai-5.jpeg', title: 'Roman Blind Dubai 5' },
+      { src: './src/assets/blinds/roman-blinds-dubai-6.jpeg', title: 'Roman Blind Dubai 6' },
+      { src: './src/assets/blinds/shutter-blinds-dubai-1.jpeg', title: 'Shutter Blind Dubai 1' },
+      { src: './src/assets/blinds/venetian_blinds-1.jpeg', title: 'Venetian Blind 1' },
+      // { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/800px-Good_Food_Display_-_NCI_Visuals_Online.jpg', title: 'Food 2' },
       // Add more images for the Food category
     ],
   };
