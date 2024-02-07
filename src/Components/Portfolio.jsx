@@ -3,7 +3,7 @@ import Header from './Header';
 import bg from '../assets/portfolioimg.png';
 import ImageGrid from './ImageGrid';
 
-const categories = ['Curtains', 'Sofa_fabrics', 'Sofa_re_upholstery', 'Blinds'];
+const categories = ['Curtains', 'Sofa_fabrics', 'Sofa_re_upholstery', 'Blinds','Outdoor_gazeebo'];
 
 const Portfolio = () => {
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -94,6 +94,9 @@ const Portfolio = () => {
       // { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/800px-Good_Food_Display_-_NCI_Visuals_Online.jpg', title: 'Food 2' },
       // Add more images for the Food category
     ],
+    Outdoor_gazeebo:[
+      {src:'./src/assets/outdoor_gazebo/outdoor-1.jpeg' ,title:'Outdoor-1'}
+    ],
   };
 
   const handleCategoryChange = (category) => {
@@ -110,7 +113,7 @@ const Portfolio = () => {
       {/* Uncomment this section if you need it */}
       <div className='flex flex-col items-center w-full h-auto mx-auto'>
         <div className='grid grid-rows-3 h-[13vh]'>
-          <div className='flex flex-row items-center w-[550px] border-none h-[70px] bg-gray-200 text-gray-500 rounded-[30px] mt-[70px] p-2 '>
+          <div className='flex flex-row items-center w-[850px] border-none h-[70px] bg-gray-200 text-gray-500 rounded-[30px] mt-[70px] p-2 '>
             {categories.map((category, index) => (
               <button
                 key={index}
