@@ -87,7 +87,7 @@ const CardCarousel = () => {
           &gt;
         </button>
       </div>
-      <div className="flex flex-wrap  -mx-4 gap-20 w-full">
+      <div className="flex flex-row justify-center w-full gap-8 ">
         {cards.slice(startIdx, startIdx + visibleCardsCount).map((card) => (
           <Card key={card.id}  {...card} />
         ))}
