@@ -3,7 +3,7 @@ import Header from './Header';
 import bg from '../assets/portfolioimg.png';
 import ImageGrid from './ImageGrid';
 
-const categories = ['Curtains', 'Sofa_fabrics', 'Sofa_re_upholstery', 'Blinds','Outdoor_gazeebo'];
+const categories = ['Curtains', 'Sofa_fabrics', 'Sofa_re_upholstery', 'Blinds','Outdoor_gazeebo','Carpets_and_Wallpaper'];
 
 const Portfolio = () => {
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -97,6 +97,17 @@ const Portfolio = () => {
     Outdoor_gazeebo:[
       {src:'./src/assets/outdoor_gazebo/outdoor-1.jpeg' ,title:'Outdoor-1'}
     ],
+    Carpets_and_Wallpaper:[
+      {src:'./src/assets/carpets_wallpaper/office-carpet-dubai-1.jpeg',title:'Office Carpet Dubai-1'},
+      {src:'./src/assets/carpets_wallpaper/office-carpet-dubai-2.jpeg',title:'Office Carpet Dubai-2'},
+      {src:'./src/assets/carpets_wallpaper/office-carpet-dubai-3.jpeg',title:'Office Carpet Dubai-3'},
+      {src:'./src/assets/carpets_wallpaper/office-carpet-dubai-4.jpeg',title:'Office Carpet Dubai-4'},
+      {src:'./src/assets/carpets_wallpaper/office-carpet-dubai-5.jpeg',title:'Office Carpet Dubai-5'},
+      {src:'./src/assets/carpets_wallpaper/office-carpet-dubai-6.jpeg',title:'Office Carpet Dubai-6'},
+      {src:'./src/assets/carpets_wallpaper/office-carpet-dubai-7.jpeg',title:'Office Carpet Dubai-7'},
+      {src:'./src/assets/carpets_wallpaper/carpets-1.jpeg',title:'Carpet-1'},
+
+    ]
   };
 
   const handleCategoryChange = (category) => {
@@ -128,7 +139,7 @@ const Portfolio = () => {
       </div>
 
   
-        <h2 className="text-2xl font-bold mb-4">{currentCategory} Images</h2>
+        <h2 className="text-2xl font-bold mt-8 mb-4">{currentCategory} Images</h2>
         <ImageGrid images={images[currentCategory]} />
     
     </>
