@@ -18,7 +18,7 @@ const Material = () => {
   },[])
 
   return (
-   <div className="h-[100vh] w-full mx-auto grid grid-cols-2" ref={Cref}>
+   <div className="lg:h-[100vh] w-full mx-auto grid md:grid-rows-2 lg:grid-cols-2" ref={Cref}>
      <div className=" p-5 m-20 space-y-4 lg:pt-14" >
     <p className="px-8 text-[#f3c74e]" >EXPEREINCES</p>
   
@@ -34,7 +34,7 @@ const Material = () => {
         </p>
     </div>
     <div className="py-5" >
-      <img className='mt-[30px]' src={bg}/>
+      <img className='mt-[30px] hover:scale-105 duration-500' src={bg}/>
     </div>
    </div>
   );

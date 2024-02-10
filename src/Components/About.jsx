@@ -20,7 +20,7 @@ const About = () => {
 
   return (
     <div className="min-h-screen flex flex-col lg:flex-row justify-center items-center " ref={Cref}>
-      <img className='ml-0 hover:scale-105 duration-300' src={img} alt="img" width="600px" height="500px" />
+      <img className='ml-0 hover:scale-105 duration-500' src={img} alt="img" width="600px" height="500px" />
       
       <div className=" p-5 m-20 space-y-4 lg:pt-14">
       <p className="px-8 text-[#f3c74e]" >EXPEREINCES</p>

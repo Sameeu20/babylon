@@ -24,7 +24,7 @@ const Collections = () => {
 
       <h2 className="text-4xl font-semibold mb-16 text-center">Collections</h2>
   
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4  " ref={Cref}>
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-4 " ref={Cref}>
         <FurnitureItem imageName={sofa} label="Sofa" />
         <FurnitureItem imageName={curtains} label="Curtains" />
         <FurnitureItem imageName={bed} label="Bed" />

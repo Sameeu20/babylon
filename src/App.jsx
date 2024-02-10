@@ -5,6 +5,7 @@ import Aboutpage from './Components/Aboutpage'
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import  Portfolio  from './Components/Portfolio';
 import ServicePage from './Components/Servicepage';
+import Contact from './Components/Contact';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <Route path='/about' element = {<Aboutpage/>}/>
       <Route path='/portfolio' element = {<Portfolio/>}/>
       <Route path='/services' element = {<ServicePage/>}/>
-     
+      <Route path='/contact' element = {<Contact/>}/>
     
 
     </Routes>

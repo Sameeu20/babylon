@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { IoMdMail, IoMdCall, IoMdPin } from "react-icons/io";
 import { FaPhoneAlt, FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 import c from '../assets/circle.png'
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger)
+
+
 const Contact = () => {
+  const Cref=useRef(null)
+
+  useEffect(()=>{
+  const el=Cref.current;
+  gsap.fromTo(el,{opacity:0,y:200},{opacity:2,y:0,duration:2,scrollTrigger:{
+    trigger:el,
+    scrub:1
+  }})
+  },[])
+
   return (
-    <section className="flex justify-center items-center h-screen">
+    <section className="flex justify-center items-center h-screen" ref={Cref} id="/contact">
       <div className="flex flex-col lg:flex-row max-w-screen-xl bg-white dark:bg-dark shadow-lg rounded-md overflow-hidden">
       <div className="lg:w-1/3 p-5 bg-[#E0E0E0] dark:bg-[#f3c74e] rounded-l-md relative">
           <h2 className="text-xl font-bold text-dark dark:text-white mb-4">
