@@ -19,13 +19,13 @@ const Material = () => {
 
   return (
    <div className="lg:h-[100vh] w-full mx-auto grid md:grid-rows-2 lg:grid-cols-2" ref={Cref}>
-     <div className=" p-5 m-20 space-y-4 lg:pt-14" >
-    <p className="px-8 text-[#f3c74e]" >EXPEREINCES</p>
+     <div className=" p-5 max-sm:m-5 m-20 space-y-4 lg:pt-14" >
+    <p className="px-8 max-sm:ml-[60px] text-[#f3c74e]" >EXPEREINCES</p>
   
-        <h1 className=" px-8 font-bold text-4xl text-center md:text-start">
+        <h1 className="px-8 font-bold text-4xl text-center md:text-start">
           We Provide You The Best Experience
         </h1>
-        <p className="px-8">
+        <p className="px-8 max-sm:text-justify">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
           architecto quisquam delectus minima perferendis nulla quia nisi
           laborum, exercitationem cum quo accusantium, impedit sed. Dicta, quo

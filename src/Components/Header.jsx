@@ -32,7 +32,7 @@ const Navbar = ({ onServiceLinkClick,}) => {
   }, []);
 
   return (
-    <div className={`fixed w-full transition-transform duration-300 ${scrolling ? "-translate-y-full" : "translate-y-0"}`}>
+    <div className={`z-50 fixed w-full transition-transform duration-300 ${scrolling ? "-translate-y-full" : "translate-y-0"}`}>
       <div>
         <div className="flex flex-row justify-between p-5 md:px-20 px-5 text-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
           <div className="flex flex-row items-center cursor-pointer">
