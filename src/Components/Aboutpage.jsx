@@ -26,7 +26,7 @@ const Aboutpage = () => {
           <h1 className='px-8 font-bold text-4xl text-center md:text-start'>
             About
           </h1>
-          <p className='px-8'>
+          <p className=' max-sm:px-3 lg:px-8'>
           Babylon Curtain Trading LLC has grown fast to become one of UAE’s premier curtain making firms. Babylon Curtain Trading LLC specializes in making curtains and sofa fabrics,sofa re upholstery,
           Roman,Vertical,Venetian,wooden,bamboo blinds,bed spread,cusion,carpet and wallpaper fixing and supply.
           Our team of designers has worked with a variety of clients all of whom were highly impressed by the bespoke designs and the 
