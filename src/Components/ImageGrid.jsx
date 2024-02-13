@@ -26,7 +26,7 @@ const ImageGrid = ({ images }) => {
           <img
             src={image.src}
             alt={image.title}
-            className="w-full h-auto object-cover cursor-pointer transform transition-transform hover:scale-110 rounded-lg"
+            className="w-full h-auto object-cover cursor-pointer transform transition-transform hover:scale-110 rounded-lg aspect-square"
             onClick={() => openModal(image)}
           />
           <p className=" text-center " >{image.title}</p>
