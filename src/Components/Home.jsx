@@ -25,7 +25,7 @@ function Home() {
         
         <Collections/>
        
-       <div className="flex justify-center items-center h-screen  ml-0 sm:ml-24   ">
+       <div className="flex justify-center items-center h-screen  ml-0 sm:ml-24 max-sm:flex-col ">
       <LeftComponent />
       <CardCarousel />
       
