@@ -2,7 +2,7 @@ import React from 'react';
 
 const TestimonialCard = ({ name, role, imageSrc, rating, content }) => {
   return (
-    <div className="flex-shrink w-72 p-6 rounded-lg shadow-md bg-white mx-4 mb-8">
+    <div className="flex-shrink w-72 p-6 rounded-lg shadow-md bg-white mx-4 mb-8 -z-10">
       {/* Profile Picture */}
       <img
         src={imageSrc}
