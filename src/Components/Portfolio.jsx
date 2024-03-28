@@ -113,31 +113,36 @@ const Portfolio = () => {
   const handleCategoryChange = (category) => {
     setCurrentCategory(category);
   };
+
   return (
     <>
-      <div className='w-full mx-auto'>
+      <div className='h-[40vh] w-full mx-auto'>
         <Header />
-        <img className='w-full' src={bg} alt="Background" />
+        <img className='w-200 ' src={bg} alt="Background" />
       </div>
 
-      <div className='flex flex-col items-center w-full mx-auto'>
-        <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 mt-4'>
-        {categories.map((category, index) => (
-            <button
-              key={index}
-              className={`w-full h-10 rounded-md border border-gray-300 px-2 text-sm ${currentCategory === category ? 'bg-gray-200' : 'bg-white'}`}
-              onClick={() => handleCategoryChange(category)}
-            >
-              {category}
-            </button>
-          ))}
+      {/* Uncomment this section if you need it */}
+      <div className='flex flex-col items-center w-full h-auto mx-auto'>
+        <div className='grid grid-rows-3 '>
+        <div className='flex flex-wrap items-center justify-center md:justify-start w-full max-w-xl border-none bg-gray-200 text-gray-500 rounded-lg mt-10 p-2'>
+  {categories.map((category, index) => (
+    <button
+      key={index}
+      className={`w-1/2 md:w-auto h-10 md:h-12 rounded-lg border-none px-2 my-1 md:my-0 md:mx-2 hover:bg-white ${currentCategory === category ? 'bg-white' : ''}`}
+      onClick={() => handleCategoryChange(category)}
+    >
+      {category}
+    </button>
+  ))}
+</div>
+
         </div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-        <h2 className="text-2xl font-bold mb-4">{currentCategory} Images</h2>
+  
+        <h2 className="text-2xl font-bold mt-2 mb-4">{currentCategory} Images</h2>
         <ImageGrid images={images[currentCategory]} />
-      </div>
+    
     </>
   );
 };
