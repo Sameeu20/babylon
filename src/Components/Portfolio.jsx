@@ -113,35 +113,31 @@ const Portfolio = () => {
   const handleCategoryChange = (category) => {
     setCurrentCategory(category);
   };
-
   return (
     <>
-      <div className='h-[40vh] w-full mx-auto'>
+      <div className='w-full mx-auto'>
         <Header />
-        <img className='w-200 ' src={bg} alt="Background" />
+        <img className='w-full' src={bg} alt="Background" />
       </div>
 
-      {/* Uncomment this section if you need it */}
-      <div className='flex flex-col items-center w-full h-auto mx-auto'>
-        <div className='grid grid-rows-3 h-[13vh]'>
-          <div className='flex flex-row items-center w-[850px] border-none h-[70px] bg-gray-200 text-gray-500 rounded-[30px] mt-[70px] p-2 '>
-            {categories.map((category, index) => (
-              <button
-                key={index}
-                className={`w-[200px] h-[45px] rounded-[30px] border-none px-2 hover:bg-white ${currentCategory === category ? 'bg-white' : ''}`}
-                onClick={() => handleCategoryChange(category)}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
+      <div className='flex flex-col items-center w-full mx-auto'>
+        <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 mt-4'>
+        {categories.map((category, index) => (
+            <button
+              key={index}
+              className={`w-full h-10 rounded-md border border-gray-300 px-2 text-sm ${currentCategory === category ? 'bg-gray-200' : 'bg-white'}`}
+              onClick={() => handleCategoryChange(category)}
+            >
+              {category}
+            </button>
+          ))}
         </div>
       </div>
 
-  
-        <h2 className="text-2xl font-bold mt-8 mb-4">{currentCategory} Images</h2>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        <h2 className="text-2xl font-bold mb-4">{currentCategory} Images</h2>
         <ImageGrid images={images[currentCategory]} />
-    
+      </div>
     </>
   );
 };

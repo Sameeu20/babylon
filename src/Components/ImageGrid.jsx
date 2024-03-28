@@ -1,5 +1,3 @@
-// ImageGrid.js
-
 import React, { useState } from 'react';
 import ImageModal from './ImageModal';
 
@@ -17,20 +15,19 @@ const ImageGrid = ({ images }) => {
   };
 
   return (
-    <div className="grid grid-cols-2 gap-4 md:grid-cols-4 " >
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 grid-flow-col-dense">
       {images.map((image, index) => (
-        <div key={index} className="grid gap-4 ">
-          <div>
-            
-          </div>
-          <img
-            src={image.src}
-            alt={image.title}
-            className="w-full h-auto object-cover cursor-pointer transform transition-transform hover:scale-110 rounded-lg aspect-square"
-            onClick={() => openModal(image)}
-          />
-          <p className=" text-center " >{image.title}</p>
-        </div>
+        <div key={index} className="relative group">
+        <img
+  src={image.src}
+  alt={image.title}
+  class="w-full h-auto object-cover cursor-pointer rounded-lg aspect-square sm:w-auto"
+  onClick={() => openModal(image)}
+/>
+
+        <p className="absolute bottom-2 left-2 md:bottom-4 md:left-4 bg-white bg-opacity-75 p-1 rounded text-sm sm:text-base">{image.title}</p>
+      </div>
+      
       ))}
 
       {modalOpen && selectedImage && (
