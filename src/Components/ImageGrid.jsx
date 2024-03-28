@@ -20,13 +20,11 @@ const ImageGrid = ({ images }) => {
     <div className="grid grid-cols-2 gap-4 md:grid-cols-4 " >
       {images.map((image, index) => (
         <div key={index} className="grid gap-4 ">
-          <div>
-            
-          </div>
+
           <img
             src={image.src}
             alt={image.title}
-            className="w-full h-auto object-cover cursor-pointer transform transition-transform hover:scale-110 rounded-lg aspect-square"
+            className="w-full  object-cover cursor-pointer transform transition-transform hover:scale-110 rounded-lg aspect-square"
             onClick={() => openModal(image)}
           />
           <p className=" text-center " >{image.title}</p>

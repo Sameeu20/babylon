@@ -106,7 +106,7 @@ const Navbar = ({ onServiceLinkClick,}) => {
             Services
           </Link>
           <Link
-            to="about"
+            to="/about"
             spy={true}
             smooth={true}
             duration={500}

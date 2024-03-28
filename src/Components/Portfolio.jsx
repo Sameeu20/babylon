@@ -116,7 +116,7 @@ const Portfolio = () => {
 
   return (
     <>
-      <div className='h-[40vh] w-full mx-auto'>
+      <div className=' w-full mx-auto'>
         <Header />
         <img className='w-200 ' src={bg} alt="Background" />
       </div>
@@ -124,24 +124,28 @@ const Portfolio = () => {
       {/* Uncomment this section if you need it */}
       <div className='flex flex-col items-center w-full h-auto mx-auto'>
         <div className='grid grid-rows-3 '>
-        <div className='flex flex-wrap items-center justify-center md:justify-start w-full max-w-xl border-none bg-gray-200 text-gray-500 rounded-lg mt-10 p-2'>
-  {categories.map((category, index) => (
-    <button
-      key={index}
-      className={`w-1/2 md:w-auto h-10 md:h-12 rounded-lg border-none px-2 my-1 md:my-0 md:mx-2 hover:bg-white ${currentCategory === category ? 'bg-white' : ''}`}
-      onClick={() => handleCategoryChange(category)}
-    >
-      {category}
-    </button>
-  ))}
-</div>
+        <div className='flex flex-wrap items-center justify-center md:justify-start w-full  border-none bg-gray-200 text-gray-500 rounded-lg mt-6 '>
+        {categories.map((category, index) => (
+          <button
+            key={index}
+            className={`w-1/2 md:w-auto h-8 md:h-12 rounded-lg border-none px-2 my-1 md:my-0 md:mx-2 hover:bg-white ${currentCategory === category ? 'bg-white' : ''}`}
+            onClick={() => handleCategoryChange(category)}
+          >
+            {category}
+          </button>
+        ))}
+        </div>
 
         </div>
+        <div className='flex flex-col mt-'>
+            <h2 className="text-2xl font-bold mt-0 mb-4">{currentCategory} Images</h2>
+        <ImageGrid images={images[currentCategory]} />
+
+            </div>
       </div>
 
-  
-        <h2 className="text-2xl font-bold mt-2 mb-4">{currentCategory} Images</h2>
-        <ImageGrid images={images[currentCategory]} />
+         
+
     
     </>
   );
