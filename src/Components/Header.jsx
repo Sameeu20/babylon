@@ -52,7 +52,7 @@ const Navbar = ({ onServiceLinkClick,}) => {
                   smooth={true}
                   duration={500}
                   className="hover:text-[#E58411] transition-all cursor-pointer"
-                  onClick={() => onServiceLinkClick("1")} // Pass the service ID here
+                  // onClick={() => onServiceLinkClick("1")} // Pass the service ID here
                 >
                   Services
                 </Link>
