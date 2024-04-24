@@ -20,7 +20,7 @@ const Aboutpage = () => {
       <Header />
       <img className='w-full object-cover h-64 md:h-[200px]' src={bg} alt='Background' />
       <div className='p-5 md:grid md:grid-cols-2 md:gap-8 md:py-10'>
-        <div className='space-y-4'>
+        <div className='space-y-4 mt-14 ml-4'>
           <h1 className='font-bold text-2xl md:text-4xl text-center md:text-start'>
             About
           </h1>

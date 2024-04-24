@@ -2,6 +2,36 @@ import React, { useState } from 'react';
 import Header from './Header';
 import bg from '../assets/portfolioimg.png';
 import ImageGrid from './ImageGrid';
+import curtain_1 from '../assets/curtains/curtain_1.jpg'
+import curtain_2 from '../assets/curtains/curtain_2.jpeg'
+import curtain_3 from '../assets/curtains/curtain_3.jpeg'
+import curtain_4 from '../assets/curtains/curtain_4.jpeg'
+import curtain_5 from '../assets/curtains/curtains_5.jpeg'
+import curtains_6 from '../assets/curtains/curtains_6.jpeg'
+import curtains_7 from '../assets/curtains/curtains_7.jpeg'
+import curtains_8 from '../assets/curtains/curtains_8.jpeg'
+import curtains_9 from '../assets/curtains/curtains_9.jpeg'
+import curtains_10 from '../assets/curtains/curtains_10.jpeg'
+import blinds_curtains_dubai from '../assets/curtains/blinds_curtains_dubai.jpeg'
+import blinds_curtains_dubai2 from '../assets/curtains/blinds_curtains_dubai2.jpeg'
+import curtains_11 from '../assets/curtains/curtains_11.jpeg'
+import curtains_dubai3 from '../assets/curtains/curtains_dubai3.jpeg'
+import curtains_dubai4 from '../assets/curtains/curtains_dubai4.jpeg'
+import curtains_dubai5 from '../assets/curtains/curtains_dubai5.jpeg'
+import curtains_dubai6 from '../assets/curtains/curtains_dubai6.jpeg'
+import curtains_dubai7 from '../assets/curtains/curtains_dubai7.jpeg'
+import curtains_dubai8 from '../assets/curtains/curtains_dubai8.jpeg'
+import curtains_dubai9 from '../assets/curtains/curtains_dubai9.jpeg'
+import curtains_dubai10 from '../assets/curtains/curtains_dubai10.jpeg'
+import curtains_dubai11 from '../assets/curtains/curtains_dubai11.jpeg'
+import curtains_dubai12 from '../assets/curtains/curtains_dubai12.jpeg'
+import curtains_dubai13 from '../assets/curtains/curtains_dubai13.jpeg'
+import curtains_dubai14 from '../assets/curtains/curtains_dubai14.jpeg'
+import curtains_dubai15 from '../assets/curtains/curtains_dubai15.jpeg'
+import sheercurtains_dubai from '../assets/curtains/sheercurtains_dubai.jpeg'
+import curtains_dubai16 from  '../assets/curtains/curtains_dubai16.jpeg'
+
+
 
 const categories = ['Curtains', 'Sofa_fabrics', 'Sofa_re_upholstery', 'Blinds','Outdoor_gazeebo','Carpets_and_Wallpaper'];
 
@@ -10,34 +40,34 @@ const Portfolio = () => {
 
   const images = {
     Curtains: [
-      { src: './src/assets/curtains/curtain_1.jpg', title: 'Curtain 1' },
-      { src: './src/assets/curtains/curtain_2.jpeg', title: 'Curtain 2' },
-      { src: './src/assets/curtains/curtain_3.jpeg', title: 'Curtain 3' },
-      { src: './src/assets/curtains/curtain_4.jpeg', title: 'Curtain 4' },
-      { src: './src/assets/curtains/curtains_5.jpeg', title: 'Curtain 5' },
-      { src: './src/assets/curtains/curtains_6.jpeg', title: 'Curtain 6' },
-      { src: './src/assets/curtains/curtains_7.jpeg', title: 'Curtain 7' },
-      { src: './src/assets/curtains/curtains_8.jpeg', title: 'Curtain 8' },
-      { src: './src/assets/curtains/curtains_9.jpeg', title: 'Curtain 9' },
-      { src: './src/assets/curtains/curtains_10.jpeg', title: 'Curtain 10' },
-      { src: './src/assets/curtains/blinds_curtains_dubai.jpeg', title: 'Blinds Curtain Dubai' },
-      { src: './src/assets/curtains/blinds_curtains_dubai2.jpeg', title: 'Blinds Curtain Dubai 2' },
-      { src: './src/assets/curtains/curtains_11.jpeg', title: 'Curtains 11' },
-      { src: './src/assets/curtains/curtains_dubai3.jpeg', title: 'Curtain Dubai 3' },
-      { src: './src/assets/curtains/curtains_dubai4.jpeg', title: 'Curtain Dubai 4' },
-      { src: './src/assets/curtains/curtains_dubai5.jpeg', title: 'Curtain Dubai 5' },
-      { src: './src/assets/curtains/curtains_dubai6.jpeg', title: 'Curtain Dubai 6' },
-      { src: './src/assets/curtains/curtains_dubai7.jpeg', title: 'Curtain Dubai 7' },
-      { src: './src/assets/curtains/curtains_dubai8.jpeg', title: 'Curtain Dubai 8' },
-      { src: './src/assets/curtains/curtains_dubai9.jpeg', title: 'Curtain Dubai 9' },
-      { src: './src/assets/curtains/curtains_dubai10.jpeg', title: 'Curtain Dubai 10' },
-      { src: './src/assets/curtains/curtains_dubai11.jpeg', title: 'Curtain Dubai 11' },
-      { src: './src/assets/curtains/curtains_dubai12.jpeg', title: 'Curtain Dubai 12' },
-      { src: './src/assets/curtains/curtains_dubai13.jpeg', title: 'Curtain Dubai 13' },
-      { src: './src/assets/curtains/curtains_dubai14.jpeg', title: 'Curtain Dubai 14' },
-      { src: './src/assets/curtains/curtains_dubai15.jpeg', title: 'Curtain Dubai 15' },
-      { src: './src/assets/curtains/sheercurtains_dubai.jpeg', title: 'Sheer Curtains Dubai 1' },
-      { src: './src/assets/curtains/curtains_dubai16.jpeg', title: 'Curtains Dubai 16' },
+      { src: curtain_1, title: 'Curtain 1' },
+      { src: curtain_2, title: 'Curtain 2' },
+      { src: curtain_3, title: 'Curtain 3' },
+      { src: curtain_4, title: 'Curtain 4' },
+      { src: curtain_5, title: 'Curtain 5' },
+      { src: curtains_6, title: 'Curtain 6' },
+      { src: curtains_7, title: 'Curtain 7' },
+      { src: curtains_8, title: 'Curtain 8' },
+      { src: curtains_9, title: 'Curtain 9' },
+      { src: curtains_10, title: 'Curtain 10' },
+      { src: blinds_curtains_dubai, title: 'Blinds Curtain Dubai' },
+      { src: blinds_curtains_dubai2, title: 'Blinds Curtain Dubai 2' },
+      { src: curtains_11, title: 'Curtains 11' },
+      { src: curtains_dubai3, title: 'Curtain Dubai 3' },
+      { src: curtains_dubai4, title: 'Curtain Dubai 4' },
+      { src: curtains_dubai5, title: 'Curtain Dubai 5' },
+      { src: curtains_dubai6, title: 'Curtain Dubai 6' },
+      { src: curtains_dubai7, title: 'Curtain Dubai 7' },
+      { src: curtains_dubai8, title: 'Curtain Dubai 8' },
+      { src: curtains_dubai9, title: 'Curtain Dubai 9' },
+      { src: curtains_dubai10, title: 'Curtain Dubai 10' },
+      { src: curtains_dubai11, title: 'Curtain Dubai 11' },
+      { src: curtains_dubai12, title: 'Curtain Dubai 12' },
+      { src: curtains_dubai13, title: 'Curtain Dubai 13' },
+      { src: curtains_dubai14, title: 'Curtain Dubai 14' },
+      { src: curtains_dubai15, title: 'Curtain Dubai 15' },
+      { src: sheercurtains_dubai, title: 'Sheer Curtains Dubai 1' },
+      { src: curtains_dubai16, title: 'Curtains Dubai 16' },
       { src: './src/assets/curtains/curtains_dubai17.jpeg', title: 'Curtains Dubai 17' },
       { src: './src/assets/curtains/wavecurtain.jpeg', title: 'Wave Curtain' },
       { src: './src/assets/curtains/wavecurtain_sheercurtain.jpeg', title: 'Wave Curtain,SheerCurtain' },
