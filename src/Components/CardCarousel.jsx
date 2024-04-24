@@ -1,6 +1,9 @@
 // CardCarousel.jsx
 import React, { useState } from 'react';
 import Card from './Card';
+import carousel1 from '../assets/carousel1.png';
+import carousel2 from '../assets/carousel2.png';
+import carousel3 from '../assets/carousel3.png';
 
 
 const CardCarousel = () => {
@@ -10,7 +13,7 @@ const CardCarousel = () => {
       id: 1,
       heading: 'Curtain',
       description: 'Wave curtain withshear curtain',
-      imageUrl:'./src/assets/carousel1.png',
+      imageUrl:carousel1,
       starRating: 4,
       nowAvailable: true,
       price: 49.99,
@@ -20,7 +23,7 @@ const CardCarousel = () => {
       id: 2,
       heading: 'Curtain',
       description: 'Wave curtain withshear curtain',
-      imageUrl: './src/assets/carousel2.png',
+      imageUrl: carousel2,
       starRating: 5,
       nowAvailable: true,
       price: 39.99,
@@ -30,7 +33,7 @@ const CardCarousel = () => {
       id: 3,
       heading: 'Curtain',
       description: 'Wave curtain withshear curtain',
-      imageUrl: './src/assets/carousel3.png',
+      imageUrl: carousel3,
       starRating: 5,
       nowAvailable: false,
       price: 39.99,
@@ -40,7 +43,7 @@ const CardCarousel = () => {
       id: 4,
       heading: 'Curtain',
       description: 'Description for Image 4',
-      imageUrl: './src/assets/carousel1.png',
+      imageUrl: carousel1,
       starRating: 5,
       nowAvailable: false,
       price: 39.99,
@@ -50,7 +53,7 @@ const CardCarousel = () => {
       id: 5,
       heading: 'Curtain',
       description: 'Description for Image 5',
-      imageUrl: './src/assets/carousel2.png',
+      imageUrl:carousel2,
       starRating: 5,
       nowAvailable: false,
       price: 39.99,
