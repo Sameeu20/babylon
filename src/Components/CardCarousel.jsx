@@ -66,7 +66,10 @@ const CardCarousel = () => {
   const [startIdx, setStartIdx] = useState(0);
 
   // Number of visible cards in a row
-  const visibleCardsCount = 3;
+  let  visibleCardsCount = 3;
+  if (window.innerWidth < 768) {
+    visibleCardsCount = 2;
+  }
 
   const totalCards = cards.length;
 
