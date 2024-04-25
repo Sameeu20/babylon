@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Header from './Header';
 import bg from '../assets/portfolioimg.png';
 import ImageGrid from './ImageGrid';
+
+//curtain section
 import curtain_1 from '../assets/curtains/curtain_1.jpg'
 import curtain_2 from '../assets/curtains/curtain_2.jpeg'
 import curtain_3 from '../assets/curtains/curtain_3.jpeg'
@@ -30,6 +32,71 @@ import curtains_dubai14 from '../assets/curtains/curtains_dubai14.jpeg'
 import curtains_dubai15 from '../assets/curtains/curtains_dubai15.jpeg'
 import sheercurtains_dubai from '../assets/curtains/sheercurtains_dubai.jpeg'
 import curtains_dubai16 from  '../assets/curtains/curtains_dubai16.jpeg'
+import curtains_dubai17 from '../assets/curtains/curtains_dubai17.jpeg'
+import wavecurtain from '../assets/curtains/wavecurtain.jpeg'
+import wavecurtain_sheercurtain from  '../assets/curtains/wavecurtain_sheercurtain.jpeg'
+import  wavecurtain_sheercurtain2 from '../assets/curtains/wave_sheercurtain2.jpeg'
+
+//Sofa_fabrics
+import curtains_sofa_upholstery from '../assets/sofa_fabrics/Curtains_sofa-upholstery.jpeg'
+import sofa_re_upholstry_1 from '../assets/sofa_fabrics/sofa-re-upholstry-1.jpeg'
+
+
+
+//Sofa ReUplhostery
+import curtains_sofa_upholstery_1 from '../assets/sofa_re_upholstery/curtains_sofa_upholstery_1.jpeg'
+import sofa_upholstery_1 from '../assets/sofa_re_upholstery/sofa_upholstery_1.jpeg'
+import sofa_upholstery_2 from '../assets/sofa_re_upholstery/sofa_upholstery_2.jpeg'
+import sofa_upholstery_3 from '../assets/sofa_re_upholstery/sofa_upholstery_3.jpeg'
+import sofa_upholstery_4 from '../assets/sofa_re_upholstery/sofa_upholstery_4.jpeg'
+// import sofa_upholstery_5 from '../assets/sofa_re_upholstery/sofa_upholstery5.jpeg'
+import sofa_upholstery_6 from '../assets/sofa_re_upholstery/sofa_upholstery_6.jpeg'
+import sofa_upholstery_7 from '../assets/sofa_re_upholstery/sofa_upholstery_7.jpeg'
+import sofa_upholstery_8 from '../assets/sofa_re_upholstery/sofa_upholstery_8.jpeg'
+import sofa_upholstery_9 from '../assets/sofa_re_upholstery/sofa_upholstery_9.jpeg'
+import sofa_upholstery_10 from '../assets/sofa_re_upholstery/sofa_upholstery_10.jpeg'
+import sofa_upholstery_11 from '../assets/sofa_re_upholstery/sofa_upholstery_11.jpeg'
+import sofa_upholstery_12 from '../assets/sofa_re_upholstery/sofa_upholstery_12.jpeg'
+import sofa_upholstery_dubai_1 from '../assets/sofa_re_upholstery/sofa_upholstery_dubai_1.jpeg'
+import sofa_upholstery_dubai_2 from '../assets/sofa_re_upholstery/sofa_upholstery_dubai_2.jpeg'
+import sofa_upholstery_dubai_3 from '../assets/sofa_re_upholstery/sofa_upholstery_dubai_3.jpeg'
+import arabic_majlis_upholstery_1 from '../assets/sofa_re_upholstery/arabic_majlis_upholstery_1.jpeg'
+import arabic_majlis_sofa_upholstery_dubai_2 from '../assets/sofa_re_upholstery/arabic_majlis_upholstery_dubai_2.jpeg'
+
+//Blind Assests
+import blinds_1 from '../assets/blinds/blinds-1.jpeg'
+import blinds_2 from '../assets/blinds/blinds-2.jpeg'
+import blinds_3 from '../assets/blinds/blinds-3.jpeg'
+import blinds_4 from '../assets/blinds/blinds-4.jpeg'
+import blinds_dubai_1 from '../assets/blinds/blinds-dubai-1.jpeg'
+import blinds_dubai_2 from '../assets/blinds/blinds-dubai-2.jpeg'
+import duplex_blinds_dubai_2 from '../assets/blinds/duplex-blinds-dubai-2.jpeg'
+import hospital_blinds_1 from '../assets/blinds/hospital-blinds-1.jpeg'
+import hospital_blinds_2 from '../assets/blinds/hospital-blinds-2.jpeg'
+import hospital_blinds_3 from '../assets/blinds/hospital-blinds-3.jpeg'
+import hospital_blinds_4 from '../assets/blinds/hospital-blinds-4.jpeg'
+import roman_blinds_dubai_1 from '../assets/blinds/roman-blinds-dubai-1.jpeg'
+import roman_blinds_dubai_2 from '../assets/blinds/roman-blinds-dubai-2.jpeg'
+import roman_blinds_dubai_3 from '../assets/blinds/roman-blinds-dubai-3.jpeg'
+import roman_blinds_dubai_4 from '../assets/blinds/roman-blinds-dubai-4.jpeg'
+import roman_blinds_dubai_5 from '../assets/blinds/roman-blinds-dubai-5.jpeg'
+import roman_blinds_dubai_6 from '../assets/blinds/roman-blinds-dubai-6.jpeg'
+import shutter_blinds_dubai_1 from '../assets/blinds/shutter-blinds-dubai-1.jpeg'
+import venetian_blinds_1 from '../assets/blinds/venetian_blinds-1.jpeg'
+
+//OutDoor Gazebo
+import outdoor_1 from '../assets/outdoor_gazebo/outdoor-1.jpeg'
+
+//Carpets_and_Wallpaper
+import office_carpet_dubai_1 from '../assets/carpets_wallpaper/office-carpet-dubai-1.jpeg'
+import office_carpet_dubai_2 from '../assets/carpets_wallpaper/office-carpet-dubai-2.jpeg'
+import office_carpet_dubai_3 from '../assets/carpets_wallpaper/office-carpet-dubai-3.jpeg'
+import office_carpet_dubai_4 from '../assets/carpets_wallpaper/office-carpet-dubai-4.jpeg'
+import office_carpet_dubai_5 from '../assets/carpets_wallpaper/office-carpet-dubai-5.jpeg'
+import office_carpet_dubai_6 from '../assets/carpets_wallpaper/office-carpet-dubai-6.jpeg'
+import office_carpet_dubai_7 from '../assets/carpets_wallpaper/office-carpet-dubai-7.jpeg'
+import carpets_1 from '../assets/carpets_wallpaper/carpets-1.jpeg'
+
 
 
 
@@ -68,74 +135,73 @@ const Portfolio = () => {
       { src: curtains_dubai15, title: 'Curtain Dubai 15' },
       { src: sheercurtains_dubai, title: 'Sheer Curtains Dubai 1' },
       { src: curtains_dubai16, title: 'Curtains Dubai 16' },
-      { src: './src/assets/curtains/curtains_dubai17.jpeg', title: 'Curtains Dubai 17' },
-      { src: './src/assets/curtains/wavecurtain.jpeg', title: 'Wave Curtain' },
-      { src: './src/assets/curtains/wavecurtain_sheercurtain.jpeg', title: 'Wave Curtain,SheerCurtain' },
-      { src: './src/assets/curtains/wave_sheercurtain2.jpeg', title: 'Wave Curtain,SheerCurtain 2' },
+      { src: curtains_dubai17, title: 'Curtains Dubai 17' },
+      { src: wavecurtain, title: 'Wave Curtain' },
+      { src:  wavecurtain_sheercurtain, title: 'Wave Curtain,SheerCurtain' },
+      { src: wavecurtain_sheercurtain2, title: 'Wave Curtain,SheerCurtain 2' },
       // Add more images for the Nature category
     ],
     Sofa_fabrics: [
-      { src: './src/assets/sofa_fabrics/Curtains_sofa-upholstery.jpeg', title: 'Curtains,Sofa Upholstery' },
-      { src: './src/assets/sofa_fabrics/sofa-re-upholstry-1.jpeg', title: 'Sofa Re  Upholstery 1' },
-      // { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC-6xb-6GVydfB0Fa4HjisAh2TVu1QJXUcTA&usqp=CAU', title: 'Animal 2' },
-      // Add more images for the Animals category
+      { src: curtains_sofa_upholstery, title: 'Curtains,Sofa Upholstery' },
+      { src: sofa_re_upholstry_1, title: 'Sofa Re  Upholstery 1' },
+
+      // Add more images for the Sofa_fabrics category
     ],
     Sofa_re_upholstery: [
-      { src: './src/assets/sofa_re_upholstery/curtains_sofa_upholstery_1.jpeg', title: 'Curtain Sofa Upholstery 1' },
-      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_1.jpeg', title: 'Sofa Upholstery 1' },
-      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_2.jpeg', title: 'Sofa Upholstery 2' },
-      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_3.jpeg', title: 'Sofa Upholstery 3' },
-      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_4.jpeg', title: 'Sofa Upholstery 4' },
-      { src: './src/assets/sofa_re_upholstery/sofa_upholstery5.jpeg', title: 'Sofa Upholstery 5' },
-      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_6.jpeg', title: 'Sofa Upholstery 6' },
-      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_7.jpeg', title: 'Sofa Upholstery 7' },
-      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_8.jpeg', title: 'Sofa Upholstery 8' },
-      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_9.jpeg', title: 'Sofa Upholstery 9' },
-      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_10.jpeg', title: 'Sofa Upholstery 10' },
-      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_11.jpeg', title: 'Sofa Upholstery 11' },
-      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_12.jpeg', title: 'Sofa Upholstery 12' },
-      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_dubai_1.jpeg', title: 'Sofa Upholstery Dubai 1' },
-      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_dubai_2.jpeg', title: 'Sofa Upholstery Dubai 2' },
-      { src: './src/assets/sofa_re_upholstery/sofa_upholstery_dubai_3.jpeg', title: 'Sofa Upholstery Dubai 3' },
-      { src: './src/assets/sofa_re_upholstery/arabic_majlis_upholstery_1.jpeg', title: 'Arabic Majlis Sofa Reupholstery 1' },
-      { src: './src/assets/sofa_re_upholstery/arabic_majlis_sofa_upholstery_dubai_2.jpeg', title: 'Arabic Majlis Sofa Reupholstery Dubai 2' },
+      { src: curtains_sofa_upholstery_1 , title: 'Curtain Sofa Upholstery 1' },
+      { src: sofa_upholstery_1, title: 'Sofa Upholstery 1' },
+      { src: sofa_upholstery_2, title: 'Sofa Upholstery 2' },
+      { src: sofa_upholstery_3, title: 'Sofa Upholstery 3' },
+      { src: sofa_upholstery_4, title: 'Sofa Upholstery 4' },
+      { src: sofa_upholstery_6, title: 'Sofa Upholstery 5' },
+      { src: sofa_upholstery_6, title: 'Sofa Upholstery 6' },
+      { src: sofa_upholstery_7, title: 'Sofa Upholstery 7' },
+      { src: sofa_upholstery_8, title: 'Sofa Upholstery 8' },
+      { src: sofa_upholstery_9, title: 'Sofa Upholstery 9' },
+      { src: sofa_upholstery_10, title: 'Sofa Upholstery 10' },
+      { src: sofa_upholstery_11, title: 'Sofa Upholstery 11' },
+      { src: sofa_upholstery_12, title: 'Sofa Upholstery 12' },
+      { src: sofa_upholstery_dubai_1, title: 'Sofa Upholstery Dubai 1' },
+      { src: sofa_upholstery_dubai_2, title: 'Sofa Upholstery Dubai 2' },
+      { src: sofa_upholstery_dubai_3, title: 'Sofa Upholstery Dubai 3' },
+      { src: arabic_majlis_upholstery_1, title: 'Arabic Majlis Sofa Reupholstery 1' },
+      { src: arabic_majlis_sofa_upholstery_dubai_2 , title: 'Arabic Majlis Sofa Reupholstery Dubai 2' },
       // Add more images for the City category
     ],
     Blinds: [
-      { src: './src/assets/blinds/blinds-1.jpeg', title: 'Blind 1' },
-      { src: './src/assets/blinds/blinds-2.jpeg', title: 'Blind 2' },
-      { src: './src/assets/blinds/blinds-3.jpeg', title: 'Blind 3' },
-      { src: './src/assets/blinds/blinds-4.jpeg', title: 'Blind 4' },
-      { src: './src/assets/blinds/blinds-dubai-1.jpeg', title: 'Blind Dubai 1' },
-      { src: './src/assets/blinds/blinds-dubai-2.jpeg', title: 'Blind Dubai 2' },
-      { src: './src/assets/blinds/duplex-blinds-dubai-2.jpeg', title: 'Duplex Blind Dubai 2' },
-      { src: './src/assets/blinds/hospital-blinds-1.jpeg', title: 'Hospital Blind 1' },
-      { src: './src/assets/blinds/hospital-blinds-2.jpeg', title: 'Hospital Blind 2' },
-      { src: './src/assets/blinds/hospital-blinds-3.jpeg', title: 'Hospital Blind 3' },
-      { src: './src/assets/blinds/hospital-blinds-4.jpeg', title: 'Hospital Blind 4' },
-      { src: './src/assets/blinds/roman-blinds-dubai-1.jpeg', title: 'Roman Blind Dubai 1' },
-      { src: './src/assets/blinds/roman-blinds-dubai-2.jpeg', title: 'Roman Blind Dubai 2' },
-      { src: './src/assets/blinds/roman-blinds-dubai-3.jpeg', title: 'Roman Blind Dubai 3' },
-      { src: './src/assets/blinds/roman-blinds-dubai-4.jpeg', title: 'Roman Blind Dubai 4' },
-      { src: './src/assets/blinds/roman-blinds-dubai-5.jpeg', title: 'Roman Blind Dubai 5' },
-      { src: './src/assets/blinds/roman-blinds-dubai-6.jpeg', title: 'Roman Blind Dubai 6' },
-      { src: './src/assets/blinds/shutter-blinds-dubai-1.jpeg', title: 'Shutter Blind Dubai 1' },
-      { src: './src/assets/blinds/venetian_blinds-1.jpeg', title: 'Venetian Blind 1' },
-      // { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/800px-Good_Food_Display_-_NCI_Visuals_Online.jpg', title: 'Food 2' },
+      { src: blinds_1, title: 'Blind 1' },
+      { src: blinds_2, title: 'Blind 2' },
+      { src: blinds_3, title: 'Blind 3' },
+      { src:  blinds_4, title: 'Blind 4' },
+      { src: blinds_dubai_1, title: 'Blind Dubai 1' },
+      { src: blinds_dubai_2, title: 'Blind Dubai 2' },
+      { src: duplex_blinds_dubai_2, title: 'Duplex Blind Dubai 2' },
+      { src: hospital_blinds_1, title: 'Hospital Blind 1' },
+      { src: hospital_blinds_2, title: 'Hospital Blind 2' },
+      { src: hospital_blinds_3, title: 'Hospital Blind 3' },
+      { src: hospital_blinds_4, title: 'Hospital Blind 4' },
+      { src: roman_blinds_dubai_1, title: 'Roman Blind Dubai 1' },
+      { src: roman_blinds_dubai_2, title: 'Roman Blind Dubai 2' },
+      { src: roman_blinds_dubai_3, title: 'Roman Blind Dubai 3' },
+      { src: roman_blinds_dubai_4, title: 'Roman Blind Dubai 4' },
+      { src: roman_blinds_dubai_5, title: 'Roman Blind Dubai 5' },
+      { src: roman_blinds_dubai_6, title: 'Roman Blind Dubai 6' },
+      { src: shutter_blinds_dubai_1, title: 'Shutter Blind Dubai 1' },
+      { src: venetian_blinds_1, title: 'Venetian Blind 1' },
       // Add more images for the Food category
     ],
     Outdoor_gazeebo:[
-      {src:'./src/assets/outdoor_gazebo/outdoor-1.jpeg' ,title:'Outdoor-1'}
+      {src:outdoor_1 ,title:'Outdoor-1'}
     ],
     Carpets_and_Wallpaper:[
-      {src:'./src/assets/carpets_wallpaper/office-carpet-dubai-1.jpeg',title:'Office Carpet Dubai-1'},
-      {src:'./src/assets/carpets_wallpaper/office-carpet-dubai-2.jpeg',title:'Office Carpet Dubai-2'},
-      {src:'./src/assets/carpets_wallpaper/office-carpet-dubai-3.jpeg',title:'Office Carpet Dubai-3'},
-      {src:'./src/assets/carpets_wallpaper/office-carpet-dubai-4.jpeg',title:'Office Carpet Dubai-4'},
-      {src:'./src/assets/carpets_wallpaper/office-carpet-dubai-5.jpeg',title:'Office Carpet Dubai-5'},
-      {src:'./src/assets/carpets_wallpaper/office-carpet-dubai-6.jpeg',title:'Office Carpet Dubai-6'},
-      {src:'./src/assets/carpets_wallpaper/office-carpet-dubai-7.jpeg',title:'Office Carpet Dubai-7'},
-      {src:'./src/assets/carpets_wallpaper/carpets-1.jpeg',title:'Carpet-1'},
+      {src:office_carpet_dubai_1 ,title:'Office Carpet Dubai-1'},
+      {src:office_carpet_dubai_2 ,title:'Office Carpet Dubai-2'},
+      {src:office_carpet_dubai_3,title:'Office Carpet Dubai-3'},
+      {src:office_carpet_dubai_4,title:'Office Carpet Dubai-4'},
+      {src:office_carpet_dubai_5,title:'Office Carpet Dubai-5'},
+      {src:office_carpet_dubai_6,title:'Office Carpet Dubai-6'},
+      {src:office_carpet_dubai_7,title:'Office Carpet Dubai-7'},
+      {src:carpets_1 ,title:'Carpet-1'},
 
     ]
   };
