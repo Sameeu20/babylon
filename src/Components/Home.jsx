@@ -1,6 +1,4 @@
 import React from 'react'
-import LeftComponent from './LeftComponent';
-import CardCarousel from './CardCarousel'
 import Header from './Header';
 import Hero from './Hero'
 import Contact from './Contact';
@@ -24,15 +22,6 @@ function Home() {
         <Hero/>
         
         <Collections/>
-       
-       <div className="flex justify-center items-center h-screen  ml-0 sm:ml-24 max-sm:flex-col ">
-      <LeftComponent />
-      <CardCarousel />
-      
-       </div>
-        
-      
-        
     
     <About/>
     <Material/>
