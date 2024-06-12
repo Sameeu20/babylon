@@ -26,11 +26,7 @@ const Material = () => {
           We Provide You The Best Experience
         </h1>
         <p className="px-8 max-sm:text-justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-          architecto quisquam delectus minima perferendis nulla quia nisi
-          laborum, exercitationem cum quo accusantium, impedit sed. Dicta, quo
-          molestias omnis reprehenderit quae animi? Explicabo quasi accusamus
-          laboriosam temporibus delectus, aut a? Quasi?
+        At Babylon Interior Company, we specialize in creating personalized and captivating spaces that reflect your unique style and vision. From consultation to installation, our comprehensive services cover every aspect of interior design, ensuring a seamless and satisfying experience for our clients. With a focus on creativity, quality, and client satisfaction, let us transform your space into something truly extraordinary. Contact us today to bring your dream design to life with Babylon Interior Company.
         </p>
     </div>
     <div className="py-5" >
