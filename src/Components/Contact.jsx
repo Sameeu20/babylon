@@ -37,13 +37,13 @@ const Contact = () => {
           <div className="flex items-center space-x-4 mt-2 py-2">
             <IoMdCall className="text-[#E58411] text-xl" />
             <p className="text-base">
-              (+123) 456-7890
+            (+971) 529494072
             </p>
           </div>
           <div className="flex items-center space-x-4 mt-2 py-2">
             <IoMdPin className="text-[#E58411] text-xl" />
             <p className="text-base">
-              123 Street, City
+                Shop no 10,Naif,Deira,Dubai,UAE
             </p>
           </div>
           <div className="absolute bottom-4 left-4 flex space-x-4 cursor-pointer">
