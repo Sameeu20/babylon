@@ -81,7 +81,7 @@ const Footer = () => {
               className=" hover:text-brightColor transition-all cursor-pointer"
               href="/"
             >
-              +91 12345678
+            +971 529494072
             </a>
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
