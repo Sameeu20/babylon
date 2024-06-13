@@ -227,14 +227,14 @@ const Portfolio = () => {
             className={`w-1/2 md:w-auto h-8 md:h-12 rounded-lg border-none px-2 my-1 md:my-0 md:mx-2 hover:bg-white ${currentCategory === category ? 'bg-white' : ''}`}
             onClick={() => handleCategoryChange(category)}
           >
-            {category}
+           {category.replace(/_/g, ' ')}
           </button>
         ))}
         </div>
 
         </div>
         <div className='flex flex-col mt-'>
-            <h2 className="text-2xl font-bold mt-0 mb-4">{currentCategory} Images</h2>
+            <h2 className="text-2xl font-bold mt-0 mb-4">{currentCategory.replace(/_/g, ' ')} Images</h2>
         <ImageGrid images={images[currentCategory]} />
 
             </div>
