@@ -39,6 +39,8 @@ const Filter = ({ onSelectService }) => {
       </div>
     </div>
     
+    {/* Old Style */}
+    
       {/* <div className='mt-8' >
 
         
