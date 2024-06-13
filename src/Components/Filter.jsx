@@ -22,13 +22,25 @@ const Filter = ({ onSelectService }) => {
   }, [onSelectService, selectedService]);
 
   return (
+    
+    
     <div className='flex flex-col items-center w-full mb-[100px]'>
-      <div className='absolute bg-gray-200 h-[68px] w-[1240px] rounded-[100px] mt-[52px]' />
-      <div className='absolute bg-gray-200 h-[68px] w-[1240px] rounded-[100px] mt-[125px]' />
-      <div className='absolute bg-gray-200 h-[60px] max-sm:w-[500px] md:w-[1000px] w-[240px] rounded-[100px] mt-[200px]' />
-      <div className='lg:hidden absolute bg-gray-200 h-[60px] max-sm:w-[500px] md:w-[1000px] w-[240px] rounded-[100px] mt-[270px]' />
-      <div className=' lg:hidden absolute bg-gray-200 h-[60px] max-sm:w-[500px] md:w-[1000px] w-[240px] rounded-[100px] mt-[345px]' />
-      <div className='relative flex flex-wrap justify-center gap-4 py-3 mt-[50px]  rounded-[50px]  mx-[25px] '>
+    <div className="w-1/2 overflow-x-auto whitespace-nowrap py-4 bg-white shadow-md rounded-lg">
+      <div className="inline-flex space-x-4 px-4">
+      {ServiceData.map((service) => (
+          <button
+            key={service.id}
+            className={`max-sm:w-[130px] w-[230px] h-12 rounded-[30px] border-none px-2  mb-2 hover:bg-white ${activeButton === service.id ? 'bg-white' : 'bg-gray-200'}`}
+            onClick={() => handleButtonClick(service.id)}
+          >
+            {service.title}
+          </button>
+        ))}
+      </div>
+    </div>
+    
+      {/* <div className='mt-8' >
+
         
         {ServiceData.map((service) => (
           <button
@@ -39,7 +51,7 @@ const Filter = ({ onSelectService }) => {
             {service.title}
           </button>
         ))}
-      </div>
+      </div> */}
       {selectedService && <ServiceComponent details={[selectedService]} />}
     </div>
   );
