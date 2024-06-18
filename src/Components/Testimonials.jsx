@@ -4,11 +4,11 @@ const TestimonialCard = ({ name, role, imageSrc, rating, content }) => {
   return (
     <div className="flex-shrink w-72 p-6 rounded-lg shadow-md bg-white mx-4 mb-8 -z-10">
       {/* Profile Picture */}
-      <img
+      {/* <img
         src={imageSrc}
         alt="Profile"
         className="w-12 h-12 rounded-full mx-auto mb-4"
-      />
+      /> */}
 
       {/* Testimonial Content */}
       <p className="text-gray-800 text-base mb-4">{content}</p>
@@ -56,11 +56,11 @@ const TestimonialContainer = () => {
     <div className="flex justify-center w-full h-[60vh]">
       
       <TestimonialCard
-        name="John Doe"
-        role="Software Developer"
+        name="Samuel Richard "
+        role="Interior Designer"
         imageSrc="path/to/profile-pic-1.jpg"
         rating={4}
-        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam."
+        content="Absolutely thrilled with how our space turned out! The designer captured exactly what we wanted and added their creative touch. Highly recommend!"
       />
 
       <TestimonialCard
@@ -68,30 +68,33 @@ const TestimonialContainer = () => {
         role="UI/UX Designer"
         imageSrc="path/to/profile-pic-2.jpg"
         rating={5}
-        content="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        content="The transformation is incredible! Our home feels so much more spacious and inviting. Thank you for your expertise and attention to detail."
+
       />
 
       <TestimonialCard
         name="Bob Johnson"
         role="Product Manager"
         imageSrc="path/to/profile-pic-3.jpg"
-        rating={3}
-        content="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        rating={5}
+        content="From concept to execution, the designer was professional and responsive. They really understood our style and brought it to life beautifully."
+
       />
 
-<TestimonialCard
+<TestimonialCard  
         name="Bob Johnson"
         role="Product Manager"
         imageSrc="path/to/profile-pic-3.jpg"
-        rating={3}
-        content="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        rating={5}
+        content="Working with  Babylon was a fantastic experience. They were organized, communicated well, and delivered beyond our expectations. Can't wait to show off our new space!"
       />
       <TestimonialCard
         name="Bob Johnson"
         role="Product Manager"
         imageSrc="path/to/profile-pic-3.jpg"
-        rating={3}
-        content="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        rating={4}
+        content="We're so glad we chose Babylon for our project. They managed to blend functionality with elegance seamlessly. It's like a dream come true."
+
       />
     </div>
   );
