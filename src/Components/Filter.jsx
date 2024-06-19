@@ -25,19 +25,22 @@ const Filter = ({ onSelectService }) => {
     
     
     <div className='flex flex-col items-center w-full mb-[100px]'>
-    <div className="w-1/2 overflow-x-auto whitespace-nowrap py-4 bg-white shadow-md rounded-lg">
-      <div className="inline-flex space-x-4 px-4">
-      {ServiceData.map((service) => (
-          <button
-            key={service.id}
-            className={`max-sm:w-[130px] w-[230px] h-12 rounded-[30px] border-none px-2  mb-2 hover:bg-white ${activeButton === service.id ? 'bg-white' : 'bg-gray-200'}`}
-            onClick={() => handleButtonClick(service.id)}
-          >
-            {service.title}
-          </button>
-        ))}
-      </div>
-    </div>
+<div className="w-full sm:w-1/2 overflow-x-auto whitespace-nowrap py-4 bg-white shadow-md rounded-lg">
+  <div className="inline-flex space-x-4 px-4">
+    {ServiceData.map((service) => (
+      <button
+        key={service.id}
+        className={`max-sm:w-[130px] sm:w-[230px] w-full h-auto min-h-12 rounded-[30px] border-none px-2 sm:px-4 mb-2 hover:bg-white ${activeButton === service.id ? 'bg-white' : 'bg-gray-200'} max-sm:text-sm sm:text-base text-sm whitespace-normal`}
+        onClick={() => handleButtonClick(service.id)}
+      >
+        {service.title}
+      </button>
+    ))}
+  </div>
+</div>
+
+
+
     
     {/* Old Style */}
     
