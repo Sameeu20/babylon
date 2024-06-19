@@ -14,9 +14,13 @@ const Footer = () => {
             Babylon makes home aesthetic and modern
           </p>
           <div className="flex p-3">
-          < BsFacebook size={30} className="p-2"/>
-          <RiTwitterXFill size={30} className="p-2"/>
+          <a href="https://www.facebook.com/117580581442542">
+          <BsFacebook size={30} className="p-2"/>
+          </a>
+          <a href="https://www.instagram.com/babylon_interior.in?igsh=cXB1cHc0aG42dzg4&utm_source=qr">
           <BsInstagram  size={30} className="p-2"/>
+          </a>
+          
           </div>
           
         </div>
