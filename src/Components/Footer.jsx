@@ -79,7 +79,7 @@ const Footer = () => {
               className=" hover:text-brightColor transition-all cursor-pointer"
               href="/"
             >
-              Babylon@email.com
+              Babyloncurtain@gmail.com
             </a>
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
