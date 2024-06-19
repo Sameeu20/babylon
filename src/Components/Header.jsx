@@ -83,57 +83,61 @@ const Navbar = ({ onServiceLinkClick,}) => {
           </div>
         </div>
         <div
-          className={` ${menu ? "translate-x-0" : "-translate-x-full"} lg:hidden flex flex-col absolute bg-black text-white left-0 top-20 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
-        >
-          <Link
-            to="/"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-[#E58411] transition-all cursor-pointer"
-            onClick={closeMenu}
-          >
-            Home
-          </Link>
-          <Link
-            to="/services"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-[#E58411] transition-all cursor-pointer"
-             // Pass the service ID here
-          >
-            Services
-          </Link>
-          <Link
-            to="/about"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-[#E58411] transition-all cursor-pointer"
-            onClick={closeMenu}
-          >
-            About
-          </Link>
-          <Link
-            to="/portfolio"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-[#E58411] transition-all cursor-pointer"
-            onClick={closeMenu}
-          >
-            Portfolio
-          </Link>
-<Link1
- to="/contact"
- spy={true}
+  className={` ${
+    menu ? "translate-x-0" : "-translate-x-full"
+  } lg:hidden flex flex-col absolute bg-black bg-opacity-50 backdrop-blur-md text-white left-0 top-20 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
+>
+  <Link
+    to="/"
+    spy={true}
     smooth={true}
-    duration={1400} 
-    offset={-100}>
-<Button className='hover:bg-[#E58411]' title="Contact" /></Link1>
-         
-        </div>
+    duration={500}
+    className="hover:text-[#E58411] transition-all cursor-pointer"
+    onClick={closeMenu}
+  >
+    Home
+  </Link>
+  <Link
+    to="/services"
+    spy={true}
+    smooth={true}
+    duration={500}
+    className="hover:text-[#E58411] transition-all cursor-pointer"
+    // Pass the service ID here
+  >
+    Services
+  </Link>
+  <Link
+    to="/about"
+    spy={true}
+    smooth={true}
+    duration={500}
+    className="hover:text-[#E58411] transition-all cursor-pointer"
+    onClick={closeMenu}
+  >
+    About
+  </Link>
+  <Link
+    to="/portfolio"
+    spy={true}
+    smooth={true}
+    duration={500}
+    className="hover:text-[#E58411] transition-all cursor-pointer"
+    onClick={closeMenu}
+  >
+    Portfolio
+  </Link>
+  <Link1
+    to="/contact"
+    spy={true}
+    smooth={true}
+    duration={1400}
+    offset={-100}
+  >
+    <Button className='hover:bg-[#E58411]' title="Contact" />
+  </Link1>
+</div>
+
       </div>
     </div>
   );
