@@ -48,7 +48,7 @@ const Footer = () => {
            
           </nav>
         </div>
-        <div>
+        {/* <div>
           <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Services</h1>
           <nav className=" flex flex-col gap-2">
             <a
@@ -71,7 +71,7 @@ const Footer = () => {
             </a>
            
           </nav>
-        </div>
+        </div> */}
         <div>
           <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Contact Us</h1>
           <nav className=" flex flex-col gap-2">
