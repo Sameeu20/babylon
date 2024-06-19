@@ -2,7 +2,7 @@ import React from 'react';
 
 const ServiceComponent = ({ details }) => {
   return (
-    <div className='h-[60vh] w-full mx-auto'>
+    <div className='h-[60vh] w-full mx-auto p-5'>
       {details.map((value, index) => (
         <div key={index} className='grid grid-cols-1 lg:grid-cols-2 gap-8 items-center'>
           <div className='lg:mt-0'>
