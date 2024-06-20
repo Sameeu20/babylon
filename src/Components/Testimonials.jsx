@@ -65,7 +65,7 @@ const TestimonialContainer = () => {
 
       <TestimonialCard
         name="Jane Smith"
-        role="UI/UX Designer"
+        role=""
         imageSrc="path/to/profile-pic-2.jpg"
         rating={5}
         content="The transformation is incredible! Our home feels so much more spacious and inviting. Thank you for your expertise and attention to detail."
@@ -74,7 +74,7 @@ const TestimonialContainer = () => {
 
       <TestimonialCard
         name="Bob Johnson"
-        role="Product Manager"
+        role="Real Estate"
         imageSrc="path/to/profile-pic-3.jpg"
         rating={5}
         content="From concept to execution, the designer was professional and responsive. They really understood our style and brought it to life beautifully."
@@ -82,15 +82,15 @@ const TestimonialContainer = () => {
       />
 
 <TestimonialCard  
-        name="Bob Johnson"
+        name="Phil Johnson"
         role="Product Manager"
         imageSrc="path/to/profile-pic-3.jpg"
         rating={5}
         content="Working with  Babylon was a fantastic experience. They were organized, communicated well, and delivered beyond our expectations. Can't wait to show off our new space!"
       />
       <TestimonialCard
-        name="Bob Johnson"
-        role="Product Manager"
+        name="Jefferson"
+        role=""
         imageSrc="path/to/profile-pic-3.jpg"
         rating={4}
         content="We're so glad we chose Babylon for our project. They managed to blend functionality with elegance seamlessly. It's like a dream come true."
