@@ -14,7 +14,7 @@ import Marquee from 'react-fast-marquee';
 function Home() {
 
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <Headroom>
       <Header/>
       </Headroom>
