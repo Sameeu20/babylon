@@ -31,7 +31,7 @@ const Contact = () => {
           <div className="flex items-center space-x-4 mt-4 py-2">
             <IoMdMail className="text-[#E58411] text-xl" />
             <p className="text-base">
-              info@example.com
+            Babyloncurtain@gmail.com
             </p>
           </div>
           <div className="flex items-center space-x-4 mt-2 py-2">
