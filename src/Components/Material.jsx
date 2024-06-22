@@ -19,16 +19,15 @@ const Material = () => {
 
   return (
    <div className="lg:h-[100vh] w-full mx-auto grid md:grid-rows-2 lg:grid-cols-2" ref={Cref}>
-     <div className=" p-5 max-sm:m-5 m-20 space-y-4 lg:pt-14" >
-    <p className="px-8 max-sm:ml-[60px] text-[#f3c74e]" >EXPEREINCES</p>
-  
-        <h1 className="px-8 font-bold text-4xl text-center md:text-start">
-          We Provide You The Best Experience
-        </h1>
-        <p className="px-8 max-sm:text-justify">
-        At Babylon Interior Company, we specialize in creating personalized and captivating spaces that reflect your unique style and vision. From consultation to installation, our comprehensive services cover every aspect of interior design, ensuring a seamless and satisfying experience for our clients. With a focus on creativity, quality, and client satisfaction, let us transform your space into something truly extraordinary. Contact us today to bring your dream design to life with Babylon Interior Company.
-        </p>
-    </div>
+       <div className="p-5 max-sm:m-5 m-20 space-y-4 lg:pt-14">
+    <p className="px-8 max-sm:ml-[60px] text-[#f3c74e]">EXPERIENCES</p>
+    <h1 className="px-8 font-bold text-4xl text-center md:text-start">
+      Transforming Your Space with Elegance
+    </h1>
+    <p className="px-8 max-sm:text-justify">
+      At Babylon, we pride ourselves on delivering tailor-made curtain solutions that enhance the beauty and functionality of your interiors. Our dedicated team guides you through every step, from expert consultation to meticulous installation, ensuring a seamless and enjoyable journey. Committed to excellence, innovation, and your complete satisfaction, we create stunning window treatments that elevate your home or office environment. Reach out to us today to start your journey toward a beautifully transformed space with Babylon.
+    </p>
+  </div>
     <div className="py-5" >
       <img className='mt-[30px] hover:scale-105 duration-500' src={bg}/>
     </div>

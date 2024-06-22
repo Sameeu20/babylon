@@ -7,12 +7,12 @@ import Contact from './Contact';
 
 const Aboutpage = () => {
   const cardsData = [
-    { heading: 'Free Delivery', description: 'Lorem ipsum dolor sit amet.' },
-    { heading: 'Free Delivery', description: 'Lorem ipsum dolor sit amet.' },
-    { heading: 'Support 24/7', description: 'Lorem ipsum dolor sit amet.' },
-    { heading: 'Support 24/7', description: 'Lorem ipsum dolor sit amet.' },
-    { heading: 'Free Delivery', description: 'Lorem ipsum dolor sit amet.' },
-    { heading: 'Free Delivery', description: 'Lorem ipsum dolor sit amet.' },
+    { heading: 'Consultation and Design', description: "Providing advice on suitable styles, fabrics, and colors for curtains based on the client 's preferences and interior decor" },
+    { heading: 'Customization', description: "Tailoring curtains to fit specific window dimensions and design requirements." },
+    { heading: 'Fabric Selection', description: 'Offering a variety of fabrics such as silk, linen, cotton, and synthetics with different textures and patterns.' },
+    { heading: 'Measurement and Installation', description: 'Taking accurate measurements of windows and professionally installing curtains to ensure a perfect fit.' },
+    { heading: 'Maintenance and Cleaning', description: 'Advising on care instructions and sometimes offering cleaning services to maintain curtain quality.' },
+    { heading: 'Additional Products', description: 'Providing related products like curtain rods, tie-backs, and hardware for a complete window treatment solution.' },
   ];
 
   return (
