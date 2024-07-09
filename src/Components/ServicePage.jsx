@@ -2,6 +2,7 @@ import React, { useState,useRef,useEffect } from 'react';
 import Header from './Header';
 import bg from '../assets/service1.png';
 import ServiceComponent from './ServiceComponent';
+import Whychooses from './Whychoose';
 import Filter from './Filter';
 import Contact from './Contact';
 import Footer from './Footer';
@@ -9,6 +10,17 @@ import ServiceData from './ServiceData';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger)
+
+const ServiceDescription=[
+  {
+    'heading':'Custom Design and Fabrication',
+    'description':'This involves creating custom curtains or drapery according to the customers specifications. It includes selecting the fabric, determining the size and style of the curtains, and manufacturing them to fit the customers windows perfectly.'
+  },
+  {
+    'heading':'Expert Hemming and Tailoring',
+    'description':'For curtains, this would include hemming to adjust the length of the curtains as per the window size or desired length. Tailoring may involve adjusting the width or ensuring the curtains drape correctly.'
+  },
+]
 
 const ServicePage = () => {
   const initialSelectedService = ServiceData.find((service) => service.id === "1");
@@ -40,11 +52,13 @@ const ServicePage = () => {
       </div>
       <div ref={Cref}>
         <Filter onSelectService={handleServiceSelection} />
-      </div>
-      <div className='  h-[10vh]'>
+      </div>a
+      <div className=''>
         <ServiceComponent details={selectedService ? [selectedService] : []} />
       </div>
-      <Contact />
+      
+      
+      <Contact /> 
       <Footer />
     </div>
   );
