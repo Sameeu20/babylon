@@ -53,7 +53,7 @@ const ServicePage = () => {
       <div ref={Cref}>
         <Filter onSelectService={handleServiceSelection} />
       </div>a
-      <div className=''>
+      <div className='flex justify-center'>
         <ServiceComponent details={selectedService ? [selectedService] : []} />
       </div>
       

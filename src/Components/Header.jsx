@@ -5,6 +5,7 @@ import Button from "../layouts/Button";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import { useEffect } from "react";
+import navbarLogo from '../assets/navbar-logo.png'
 
 const Navbar = ({ onServiceLinkClick,}) => {
   const [menu, setMenu] = useState(false);
@@ -35,9 +36,11 @@ const Navbar = ({ onServiceLinkClick,}) => {
     <div style={{zIndex:100}}  className={`fixed w-full transition-transform duration-300 ${scrolling ? "-translate-y-full" : "translate-y-0"}`}>
       <div>
         <div className="flex flex-row justify-between p-5 md:px-20 px-5 text-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
-          <div className="flex flex-row items-center cursor-pointer">
-            <h1 className="text-2xl font-bold">Babylon</h1>
-          </div>
+        <div className="flex flex-row items-center cursor-pointer">
+          <img src={navbarLogo} className="w-[72px] h-[72px]" alt="Navbar Logo" />
+          <h1>Babylon</h1>
+        </div>
+
 
           <nav className="hidden md:flex flex-row items-center  md:px-[100px]  lg:px-[250px] text-lg font-medium gap-8 ">
             <Link to="/" spy={true} smooth={true} duration={500} className="hover:text-[#E58411]  transition-all cursor-pointer">
