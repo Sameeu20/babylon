@@ -1,26 +1,42 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-const GoogleFormPopup = ({ onClose }) => {
+const GoogleFormOverlay = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
+  const handleClose = () => {
+    setIsVisible(false);
+  };
+
   return (
-    <div className="overlay">
-      <div className="google-form-popup">
-        <button className="close-button" onClick={onClose}>
-          &times;
-        </button>
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSduoL5kKDsM9xLaWIPDp7TtFYXTi-WuWLM9huidcSazEwnfxg/viewform?embedded=true"
-          width="640"
-          height="1006"
-          frameBorder="0"
-          marginHeight="0"
-          marginWidth="0"
-          title="Google Form"
-        >
-          Loading…
-        </iframe>
+    isVisible && (
+      <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg shadow-lg relative w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl">
+          <button
+            onClick={handleClose}
+            className="absolute top-0 right-0 mt-4 mr-4 text-black"
+          >
+            &times;
+          </button>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSduoL5kKDsM9xLaWIPDp7TtFYXTi-WuWLM9huidcSazEwnfxg/viewform?embedded=true"
+            width="100%"
+            height="400"
+            className="sm:h-500 md:h-600 lg:h-700"
+            frameBorder="0"
+            marginHeight="0"
+            marginWidth="0"
+            title="Google Form"
+          >
+            Loading…
+          </iframe>
+        </div>
       </div>
-    </div>
+    )
   );
-}
+};
 
-export default GoogleFormPopup;
+export default GoogleFormOverlay;
