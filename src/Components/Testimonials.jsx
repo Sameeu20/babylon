@@ -73,7 +73,7 @@ const TestimonialContainer = () => {
       />
 
       <TestimonialCard
-        name="Bob Johnson"
+        name="Ahmad Hamza"
         role="Real Estate"
         imageSrc="path/to/profile-pic-3.jpg"
         rating={5}

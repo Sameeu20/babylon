@@ -44,7 +44,7 @@ const Aboutpage = () => {
           ))}
         </div>
       </div>
-      <Contact/>
+      {/* <Contact/> */}
     </div>
   );
 };

@@ -69,7 +69,7 @@ const Navbar = ({ onServiceLinkClick,}) => {
             <Link to="/portfolio" spy={true} smooth={true} duration={500} className="hover:text-[#E58411] transition-all cursor-pointer">
               Portfolio
             </Link>
-         <Link1 
+         {/* <Link1 
          to="/contact"
          spy={true}
             smooth={true}
@@ -77,7 +77,7 @@ const Navbar = ({ onServiceLinkClick,}) => {
             offset={-100}
             
             >
-         <Button title="Contact"  /></Link1>
+         <Button title="Contact"  /></Link1> */}
            
           </nav>
 
@@ -130,7 +130,7 @@ const Navbar = ({ onServiceLinkClick,}) => {
   >
     Portfolio
   </Link>
-  <Link1
+  {/* <Link1
     to="/contact"
     spy={true}
     smooth={true}
@@ -138,7 +138,7 @@ const Navbar = ({ onServiceLinkClick,}) => {
     offset={-100}
   >
     <Button className='hover:bg-[#E58411]' title="Contact" />
-  </Link1>
+  </Link1> */}
 </div>
 
       </div>
