@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from './Header';
 import bg from '../assets/portfolioimg.png';
 import ImageGrid from './ImageGrid';
-
+import Footer from'./Footer';
 //curtain section
 import curtain_1 from '../assets/curtains/curtain_1.jpg'
 import curtain_2 from '../assets/curtains/curtain_2.jpeg'
@@ -238,7 +238,12 @@ const Portfolio = () => {
         <ImageGrid images={images[currentCategory]} />
 
             </div>
+           
       </div>
+      <div className='mt-12'>
+      <Footer/>
+      </div>
+      
 
          
 

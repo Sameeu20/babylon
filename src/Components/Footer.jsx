@@ -2,6 +2,7 @@ import React from "react";
 import { BsFacebook } from "react-icons/bs";
 import { RiTwitterXFill } from "react-icons/ri";
 import { BsInstagram } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -27,24 +28,15 @@ const Footer = () => {
         <div>
           <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Links</h1>
           <nav className=" flex flex-col gap-2">
-            <a
-              className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/services"
-            >
-              Services
-            </a>
-            <a
-              className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/about"
-            >
+          <Link to="/services" className="hover:text-[#E58411] transition-all cursor-pointer">
+          Services
+          </Link>
+            <Link to="/about" spy={true} smooth={true} duration={500} className="hover:text-[#E58411]  transition-all cursor-pointer">
               About
-            </a>
-            <a
-              className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/portfolio"
-            >
+            </Link>
+            <Link to="/portfolio" spy={true} smooth={true} duration={500} className="hover:text-[#E58411]  transition-all cursor-pointer">
               Portfolio
-            </a>
+            </Link>
            
           </nav>
         </div>
