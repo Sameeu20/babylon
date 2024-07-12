@@ -14,7 +14,7 @@ const ServiceComponent = ({ details }) => {
           </div>
           <div className="bg-white p-8 m-4 rounded grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mx-auto lg:col-span-2 lg:row-span-1">
             {value.services.map((service, idx) => (
-              <div key={idx} className="border border-gray-200 p-4 rounded-lg">
+              <div key={idx} className=" p-4 rounded-lg">
                 <h2 className="text-gray-800 font-semibold text-lg mb-2">{service.heading}</h2>
                 <p className="text-gray-700 leading-relaxed">{service.description}</p>
               </div>
