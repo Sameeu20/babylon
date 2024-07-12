@@ -9,7 +9,7 @@ const Footer = () => {
     <div className=" bg-black hover:bg-gray-950 text-white rounded-t-3xl mt-8 md:mt-0">
       <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
         <div className=" w-full md:w-1/4">
-          <h1 className=" font-semibold text-xl pb-4">Babylon</h1>
+          <h1 className=" font-semibold text-xl pb-4">Babylon Curtain Trading LLC</h1>
           <p className=" text-sm">
             Babylon makes home aesthetic and modern
           </p>
@@ -29,19 +29,19 @@ const Footer = () => {
           <nav className=" flex flex-col gap-2">
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
+              href="/services"
             >
               Services
             </a>
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
+              href="/about"
             >
               About
             </a>
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
+              href="/portfolio"
             >
               Portfolio
             </a>
