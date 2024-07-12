@@ -39,7 +39,7 @@ const Navbar = ({ onServiceLinkClick,}) => {
         <div className="flex flex-row justify-between p-5 md:px-20 px-5 text-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
         <div className="flex flex-row items-center cursor-pointer">
           <img src={navbarLogo} className="w-[72px] h-[72px]" alt="Navbar Logo" />
-          <h1>Babylon Curtain Trading LLC</h1>
+          <h1 className="font-sans  font-semibold text-white-900">Babylon Curtain Trading LLC</h1>
         </div>
 
 
