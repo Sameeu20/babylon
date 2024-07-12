@@ -28,7 +28,7 @@ function Home() {
       <Marquee speed={80}>
         <Testimonials />
       </Marquee>
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );

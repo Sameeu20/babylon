@@ -58,7 +58,7 @@ const ServicePage = () => {
       </div>
       
       
-      <Contact /> 
+      {/* <Contact />  */}
       <Footer />
     </div>
   );
